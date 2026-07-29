@@ -1,5 +1,6 @@
 app:
   name: FleetIndia
+
 common:
   new: નવું
   create: બનાવો
@@ -9,8 +10,8 @@ common:
   save: સાચવો
   save-changes: ફેરફારો સાચવો
   delete: કાઢી નાખો
-  delete-selected: પસંદ કરેલ કાઢી નાખો
-  delete-selected-count: પસંદ કરેલ {count} કાઢી નાખો
+  delete-selected: Delete Selected
+  delete-selected-count: Delete {count} Selected
   your-profile: તમારી પ્રોફાઇલ
   date-of-birth: જન્મ તારીખ
   organization: સંસ્થા
@@ -39,21 +40,21 @@ common:
   previous: પાછલું
   submit: સબમિટ કરો
   apply: Apply
-  continue: ચાલુ રાખો
+  continue: Continue
   proceed: Proceed
-  select: પસંદ કરો
+  select: Select
   deselect: Deselect
-  search: શોધો
-  filter: ફિલ્ટર
+  search: Search
+  filter: Filter
   sort: Sort
-  view-all: View બધા
+  view-all: View All
   clear: Clear
   done: Done
   finish: Finish
   skip: Skip
   method: Method
-  bulk-delete: Bulk કાઢી નાખો
-  bulk-delete-resource: Bulk કાઢી નાખો {resource}
+  bulk-delete: Bulk Delete
+  bulk-delete-resource: Bulk Delete {resource}
   bulk-cancel: Bulk Cancel
   bulk-cancel-resource: Bulk Cancel {resource}
   bulk-actions: Bulk Actions
@@ -77,32 +78,32 @@ common:
   toolbar: Toolbar
   footer: Footer
   header: Header
-  title: શીર્ષક
+  title: Title
   subtitle: Subtitle
-  description: વર્ણન
+  description: Description
   placeholder: Placeholder
   label: Label
-  button: બટન
+  button: Button
   icon: Icon
   avatar: Avatar
   link: Link
   badge: Badge
   tag: Tag
   banner: Banner
-  step: Step
+  step: પગલું
   progress: Progress
   map: Map
   board: Board
-  loading: લોડ થઈ રહ્યું છે
-  loading-resource: લોડ થઈ રહ્યું છે {resource}
-  saving: Saving
+  loading: Loading
+  loading-resource: Loading {resource}
+  saving: સાચવી રહ્યું છે
   processing: Processing
   fetching: Fetching
   updating: Updating
   uploading: Uploading
   completed: Completed
   success: સફળ
-  failed: નિષ્ફળ
+  failed: Failed
   error: ભૂલ
   warning: ચેતવણી
   info: Info
@@ -114,7 +115,7 @@ common:
   disabled: Disabled
   online: Online
   offline: Offline
-  pending: Pending
+  pending: બાકી
   archived: Archived
   hidden: Hidden
   visible: Visible
@@ -122,35 +123,36 @@ common:
   not-found: Not Found
   no-results: No Results
   try-again: Try Again
-  are-you-sure: છે તમે sure?
+  are-you-sure: Are you sure?
   changes-saved: Changes saved successfully.
   saved-successfully: Changes saved successfully.
-  field-saved: '{field} saved successfully.'
+  field-saved: >-
+    {field} saved successfully.
   changes-discarded: Changes discarded.
-  delete-confirm: છે તમે sure તમે want to કાઢી નાખો આ item?
+  delete-confirm: Are you sure you want to delete this item?
   action-successful: Action completed successfully.
-  action-failed: Action નિષ્ફળ. કૃપા કરીને try again.
+  action-failed: Action failed. Please try again.
   something-went-wrong: Something went wrong.
-  please-wait: કૃપા કરીને wait...
-  sign-in: સાઇન ઇન
+  please-wait: Please wait...
+  sign-in: Sign In
   sign-out: Sign Out
-  sign-up: સાઇન અપ
-  log-in: Log માં
+  sign-up: Sign Up
+  log-in: Log In
   log-out: Log Out
   register: Register
-  forgot-password: Forgot પાસવર્ડ
-  reset-password: Reset પાસવર્ડ
-  change-password: Change પાસવર્ડ
-  password: પાસવર્ડ
+  forgot-password: Forgot Password
+  reset-password: Reset Password
+  change-password: Change Password
+  password: Password
   confirm-password: પાસવર્ડની પુષ્ટિ કરો
-  email: ઇમેઇલ
+  email: Email
   username: Username
   remember-me: Remember Me
-  welcome: સ્વાગત છે
-  welcome-back: સ્વાગત છે Back
-  profile: પ્રોફાઇલ
-  account: એકાઉન્ટ
-  settings: સેટિંગ્સ
+  welcome: Welcome
+  welcome-back: Welcome Back
+  profile: Profile
+  account: Account
+  settings: Settings
   preferences: Preferences
   record: Record
   records: Records
@@ -159,43 +161,44 @@ common:
   entry: Entry
   entries: Entries
   id: ID
-  name: નામ
-  type: પ્રકાર
+  name: Name
+  type: Type
   category: Category
   overview: Overview
   value: Value
-  amount: રકમ
+  amount: Amount
   price: Price
   quantity: Quantity
-  status: સ્થિતિ
-  date: તારીખ
-  date-created: તારીખ Created
-  date-updated: તારીખ Updated
-  time: સમય
+  status: Status
+  date: Date
+  date-created: Date Created
+  date-updated: Date Updated
+  time: Time
   created-at: Created At
   updated-at: Updated At
   expired-at: Expired at
   last-seen-at: Last Seen At
   last-modified: Last Modified
-  last-modified-data: 'Last Modified: {date}'
+  last-modified-data: >-
+    Last Modified: {date}
   actions: Actions
-  details: વિગતો
+  details: Details
   notes: Notes
   reference: Reference
-  filter-by: ફિલ્ટર By
-  filter-by-field: ફિલ્ટર By {field}
+  filter-by: Filter By
+  filter-by-field: Filter By {field}
   sort-by: Sort By
   ascending: Ascending
   descending: Descending
-  all: બધા
-  none: કંઈ નહીં
-  select-all: પસંદ કરો બધા
-  deselect-all: Deselect બધા
+  all: All
+  none: None
+  select-all: Select All
+  deselect-all: Deselect All
   show-more: Show More
   show-less: Show Less
   page: Page
-  of: ના
-  total: કુલ
+  of: of
+  total: Total
   items-per-page: Items per page
   showing: Showing
   to: to
@@ -209,38 +212,38 @@ common:
   week: Week
   month: Month
   year: Year
-  date-range: તારીખ Range
-  start-date: Start તારીખ
-  end-date: End તારીખ
-  time-zone: સમય Zone
+  date-range: Date Range
+  start-date: Start Date
+  end-date: End Date
+  time-zone: Time Zone
   system: System
-  dashboard: ડેશબોર્ડ
+  dashboard: Dashboard
   home: Home
   analytics: Analytics
   reports: Reports
   logs: Logs
-  help: મદદ
+  help: Help
   support: Support
   contact: Contact
   documentation: Documentation
-  language: Language
-  timezone: સમય ઝોન
+  language: ભાષા
+  timezone: Timezone
   version: વર્ઝન
   theme: Theme
   light-mode: Light Mode
-  dark-mode: Dark Mode
-  update-available: અપડેટ Available
-  install-update: Install અપડેટ
+  dark-mode: ડાર્ક મોડ
+  update-available: Update Available
+  install-update: Install Update
   maintenance-mode: Maintenance Mode
-  notification: સૂચના
+  notification: Notification
   notifications: Notifications
   mark-as-read: Mark as Read
-  mark-all-as-read: Mark બધા as Read
+  mark-all-as-read: Mark All as Read
   clear-notifications: Clear Notifications
-  company: કંપની
-  companies: Companies
-  user: વપરાશકર્તા
-  users: વપરાશકર્તાઓ
+  company: Company
+  companies: કંપનીઓ
+  user: User
+  users: Users
   role: Role
   roles: Roles
   permission: Permission
@@ -250,11 +253,11 @@ common:
   unauthorized: Unauthorized
   forbidden: Forbidden
   resource-not-found: Resource Not Found
-  server-error: Server ભૂલ
-  validation-error: Validation ભૂલ
+  server-error: સર્વર ભૂલ
+  validation-error: Validation Error
   timeout-error: Request Timed Out
-  network-error: Network ભૂલ
-  unknown-error: Unknown ભૂલ
+  network-error: Network Error
+  unknown-error: Unknown Error
   file: File
   files: Files
   folder: Folder
@@ -262,26 +265,26 @@ common:
   upload-file: Upload File
   upload-files: Upload Files
   upload-image: Upload Image
-  upload-image-supported: Supports PNGs, JPEGs અને GIFs
+  upload-image-supported: Supports PNGs, JPEGs and GIFs
   choose-file: Choose File
   choose-files: Choose Files
-  drag-and-drop: Drag અને Drop
+  drag-and-drop: Drag and Drop
   download-file: Download File
   file-size: File Size
-  file-type: File પ્રકાર
-  confirm-delete: પુષ્ટિ કાઢી નાખો
-  confirm-action: પુષ્ટિ Action
-  confirm-exit: પુષ્ટિ Exit
-  confirm-and-save-changes: પુષ્ટિ & સાચવો Changes
-  are-you-sure-exit: છે તમે sure તમે want to exit?
-  unsaved-changes-warning: તમે have unsaved changes.
+  file-type: File Type
+  confirm-delete: Confirm Delete
+  confirm-action: Confirm Action
+  confirm-exit: Confirm Exit
+  confirm-and-save-changes: Confirm & Save Changes
+  are-you-sure-exit: Are you sure you want to exit?
+  unsaved-changes-warning: You have unsaved changes.
   connected: Connected
   disconnected: Disconnected
   reconnecting: Reconnecting
   connection-lost: Connection Lost
   connection-restored: Connection Restored
   show: Show
-  hide: Hide
+  hide: છુપાવો
   expand: Expand
   collapse: Collapse
   enable: સક્ષમ કરો
@@ -289,58 +292,67 @@ common:
   minimize: Minimize
   maximize: Maximize
   restore: Restore
-  zoom-in: Zoom માં
+  zoom-in: Zoom In
   zoom-out: Zoom Out
   fullscreen: Fullscreen
   exit-fullscreen: Exit Fullscreen
-  true: true
-  false: false
+  yes: હા
+  no: ના
   ok: OK
-  none-available: કંઈ નહીં Available
+  none-available: None Available
   default: Default
   custom: Custom
   general: General
   advanced: Advanced
-  placeholder-text: દાખલ કરો ટેક્સ્ટ here...
+  placeholder-text: Enter text here...
   learn-more: Learn More
   view-resource: View {resource}
-  view-resource-details: View {resource} વિગતો
-  create-a-new-resource: બનાવો a નવું {resource}
-  create-new-resource: બનાવો નવું {resource}
-  search-resource: શોધ {resource}
-  new-resource: નવું {resource}
-  update-resource: અપડેટ {resource}
-  save-resource-changes: સાચવો {resource} Changes
+  view-resource-details: View {resource} Details
+  create-a-new-resource: Create a new {resource}
+  create-new-resource: Create new {resource}
+  search-resource: Search {resource}
+  new-resource: New {resource}
+  update-resource: Update {resource}
+  save-resource-changes: Save {resource} Changes
   creating-resource: Creating {resource}
   cancel-resource: Cancel {resource}
-  delete-resource: કાઢી નાખો {resource}
-  delete-resource-name: 'કાઢી નાખો: {resourceName}'
-  resource-actions: '{resource} Actions'
-  resource-location: '{resource} Location'
-  delete-resource-named: કાઢી નાખો {resource} ({resourceName})
-  delete-resource-prompt: આ action cannot be undone. Once deleted, the record will be permanently removed.
-  delete-cannot-be-undone: આ action cannot be undone. Once deleted, the record will be permanently removed.
-  create-resource: બનાવો {resource}
-  edit-resource: સંપાદિત કરો {resource}
-  edit-resource-details: સંપાદિત કરો {resource} વિગતો
-  edit-resource-type-name: 'સંપાદિત કરો {resource}: {resourceName}'
-  edit-resource-name: 'સંપાદિત કરો: {resourceName}'
+  delete-resource: Delete {resource}
+  delete-resource-name: >-
+    Delete: {resourceName}
+  resource-actions: >-
+    {resource} Actions
+  resource-location: >-
+    {resource} Location
+  delete-resource-named: Delete {resource} ({resourceName})
+  delete-resource-prompt: This action cannot be undone. Once deleted, the record will be permanently removed.
+  delete-cannot-be-undone: This action cannot be undone. Once deleted, the record will be permanently removed.
+  create-resource: Create {resource}
+  edit-resource: Edit {resource}
+  edit-resource-details: Edit {resource} Details
+  edit-resource-type-name: >-
+    Edit {resource}: {resourceName}
+  edit-resource-name: >-
+    Edit: {resourceName}
   config: Config
-  select-field: પસંદ કરો {field}
+  select-field: Select {field}
   columns: Columns
   metadata: Metadata
   meta: Meta
-  resource-created-success: નવું {resource} created successfully.
-  resource-created-success-name: નવું {resource} ({resourceName}) created successfully.
-  resource-updated-success: '{resource} ({resourceName}) updated successfully.'
-  resource-action-success: '{resource} ({resourceName}) {action} successfully.'
-  resource-deleted-success: '{resource} ({resourceName}) deleted successfully.'
-  resource-deleted: '{resource} ({resourceName}) deleted.'
-  continue-without-saving: ચાલુ રાખો Without Saving?
-  continue-without-saving-prompt: તમે have unsaved changes to આ {resource}. Continuing will discard them. Click ચાલુ રાખો
-    to proceed.
+  resource-created-success: New {resource} created successfully.
+  resource-created-success-name: New {resource} ({resourceName}) created successfully.
+  resource-updated-success: >-
+    {resource} ({resourceName}) updated successfully.
+  resource-action-success: >-
+    {resource} ({resourceName}) {action} successfully.
+  resource-deleted-success: >-
+    {resource} ({resourceName}) deleted successfully.
+  resource-deleted: >-
+    {resource} ({resourceName}) deleted.
+  continue-without-saving: Continue Without Saving?
+  continue-without-saving-prompt: You have unsaved changes to this {resource}. Continuing will discard them. Click Continue to proceed.
   changelog: Changelog
   reload: Reload
+
 resource:
   alert: Alert
   alerts: Alerts
@@ -354,7 +366,7 @@ resource:
   chat-channels: Chat Channels
   chat-log: Chat Log
   chat-logs: Chat Logs
-  chat-message: Chat સંદેશ
+  chat-message: Chat Message
   chat-messages: Chat Messages
   chat-participant: Chat Participant
   chat-participants: Chat Participants
@@ -362,15 +374,15 @@ resource:
   chat-receipts: Chat Receipts
   comment: Comment
   comments: Comments
-  company: કંપની
-  companies: Companies
+  company: Company
+  companies: કંપનીઓ
   custom-field-value: Custom Field Value
   custom-field-values: Custom Field Values
   custom-field: Custom Field
   custom-fields: Custom Fields
-  dashboard-widget: ડેશબોર્ડ Widget
-  dashboard-widgets: ડેશબોર્ડ Widgets
-  dashboard: ડેશબોર્ડ
+  dashboard-widget: Dashboard Widget
+  dashboard-widgets: Dashboard Widgets
+  dashboard: Dashboard
   dashboards: Dashboards
   extension: Extension
   extensions: Extensions
@@ -378,7 +390,7 @@ resource:
   files: Files
   group: Group
   groups: Groups
-  notification: સૂચના
+  notification: Notification
   notifications: Notifications
   permission: Permission
   permissions: Permissions
@@ -389,240 +401,269 @@ resource:
   role: Role
   roles: Roles
   setting: Setting
-  settings: સેટિંગ્સ
+  settings: Settings
   transaction: Transaction
   transactions: Transactions
-  user-device: વપરાશકર્તા Device
-  user-devices: વપરાશકર્તા Devices
-  user: વપરાશકર્તા
-  users: વપરાશકર્તાઓ
-  country: દેશ
+  user-device: User Device
+  user-devices: User Devices
+  user: User
+  users: Users
+  country: Country
+
 dropzone:
   file: file
   drop-to-upload: Drop to upload
-  invalid: અમાન્ય
-  files-ready-for-upload: '{numOfFiles} ready માટે upload.'
+  invalid: Invalid
+  files-ready-for-upload:  >-
+    {numOfFiles} ready for upload.
   upload-images-videos: Upload Images & Videos
   upload-documents: Upload Documents
   upload-documents-files: Upload Documents & Files
   upload-avatar-files: Upload Custom Avatars
-  dropzone-supported-images-videos: Drag અને drop image અને video files onto આ dropzone
-  dropzone-supported-avatars: Drag અને drop SVG અથવા PNG files
-  dropzone-supported-files: Drag અને drop files onto આ dropzone
-  or-select-button-text: અથવા પસંદ કરો files to upload.
+  dropzone-supported-images-videos: Drag and drop image and video files onto this dropzone
+  dropzone-supported-avatars: Drag and drop SVG or PNG files
+  dropzone-supported-files: Drag and drop files onto this dropzone
+  or-select-button-text: or select files to upload.
   upload-queue: Upload Queue
   uploading: Uploading...
+
 two-fa-enforcement-alert:
-  message: To enhance the security ના તમારું એકાઉન્ટ, તમારું સંસ્થા requires Two-Factor Authentication (2FA). Enable 2FA માં
-    તમારું એકાઉન્ટ સેટિંગ્સ માટે an additional layer ના protection.
+  message: To enhance the security of your account, your organization requires Two-Factor Authentication (2FA). Enable 2FA in your account settings for an additional layer of protection.
   button-text: Setup 2FA
+
 comment-thread:
   publish-comment-button-text: Publish comment
   publish-reply-button-text: Publish reply
   reply-comment-button-text: Reply
   edit-comment-button-text: સંપાદિત કરો
   delete-comment-button-text: કાઢી નાખો
-  comment-published-ago: '{createdAgo} ago'
-  comment-input-placeholder: Input a નવું comment...
-  comment-reply-placeholder: Input તમારું reply...
-  comment-input-empty-notification: તમે cannot publish empty comments...
+  comment-published-ago: >-
+          {createdAgo} ago
+  comment-input-placeholder: Input a new comment...
+  comment-reply-placeholder: Input your reply...
+  comment-input-empty-notification: You cannot publish empty comments...
   comment-min-length-notification: Comment must be atleast 2 characters
+
 dashboard:
-  select-dashboard: પસંદ કરો ડેશબોર્ડ
-  create-new-dashboard: બનાવો નવું ડેશબોર્ડ
-  create-a-new-dashboard: બનાવો a નવું ડેશબોર્ડ
-  confirm-create-dashboard: બનાવો ડેશબોર્ડ!
-  edit-layout: સંપાદિત કરો layout
+  select-dashboard: Select Dashboard
+  create-new-dashboard: Create new Dashboard
+  create-a-new-dashboard: Create a new Dashboard
+  confirm-create-dashboard: Create Dashboard!
+  edit-layout: Edit layout
   add-widgets: Add widgets
-  delete-dashboard: કાઢી નાખો ડેશબોર્ડ
-  save-dashboard: સાચવો ડેશબોર્ડ
-  you-cannot-delete-this-dashboard: તમે cannot કાઢી નાખો આ ડેશબોર્ડ.
-  are-you-sure-you-want-delete-dashboard: છે તમે sure to કાઢી નાખો આ {dashboardName}?
+  delete-dashboard: Delete dashboard
+  save-dashboard: Save Dashboard
+  you-cannot-delete-this-dashboard: You cannot delete this dashboard.
+  are-you-sure-you-want-delete-dashboard: Are you sure to delete this {dashboardName}?
+
 dashboard-widget-panel:
-  widget-name: '{widgetName} વિજેટ'
-  select-widgets: પસંદ કરો Widgets
-  close-and-save: Close અને સાચવો
-  filter-widgets: શોધ widgets…
-  no-widgets-match: No widgets match તમારું filters.
-  tab-all: બધા
+  widget-name: >-
+    {widgetName} Widget
+  select-widgets: Select Widgets
+  close-and-save: Close and Save
+  filter-widgets: Search widgets…
+  no-widgets-match: No widgets match your filters.
+  tab-all: All
   tab-default: Recommended
-  tab-added: પર ડેશબોર્ડ
+  tab-added: On Dashboard
   badge-default: Default
   add: ઉમેરો
   add-another: Add another
+
 filters-picker:
   filters: Filters
-  filter-data: ફિલ્ટર Data
+  filter-data: Filter Data
+
 visible-column-picker:
-  select-viewable-columns: પસંદ કરો viewable columns
+  select-viewable-columns: Select viewable columns
   customize-columns: Customize Columns
+
 component:
   file:
     dropdown-label: File actions
+
   import-modal:
     loading-message: Processing import...
     drop-upload: Drop to upload
-    invalid: અમાન્ય
-    ready-upload: ready માટે upload.
+    invalid: Invalid
+    ready-upload: ready for upload.
     upload-spreadsheets: Upload Spreadsheets
-    drag-drop: Drag અને drop spreadsheet files onto આ dropzone
-    button-text: અથવા પસંદ કરો spreadsheets to upload
+    drag-drop: Drag and drop spreadsheet files onto this dropzone
+    button-text: or select spreadsheets to upload
     spreadsheets: spreadsheets
     upload-queue: Upload Queue
+
   dropzone:
     file: file
     drop-to-upload: Drop to upload
-    invalid: અમાન્ય
-    files-ready-for-upload: '{numOfFiles} ready માટે upload.'
+    invalid: Invalid
+    files-ready-for-upload:  >-
+      {numOfFiles} ready for upload.
     upload-images-videos: Upload Images & Videos
-    upload-documents: દસ્તાવેજો અપલોડ કરો
+    upload-documents: Upload Documents
     upload-documents-files: Upload Documents & Files
     upload-avatar-files: Upload Custom Avatars
-    dropzone-supported-images-videos: Drag અને drop image અને video files onto આ dropzone
-    dropzone-supported-avatars: Drag અને drop SVG અથવા PNG files
-    dropzone-supported-files: Drag અને drop files onto આ dropzone
-    or-select-button-text: અથવા પસંદ કરો files to upload.
+    dropzone-supported-images-videos: Drag and drop image and video files onto this dropzone
+    dropzone-supported-avatars: Drag and drop SVG or PNG files
+    dropzone-supported-files: Drag and drop files onto this dropzone
+    or-select-button-text: or select files to upload.
     upload-queue: Upload Queue
     uploading: Uploading...
+
   two-fa-enforcement-alert:
-    message: To enhance the security ના તમારું એકાઉન્ટ, તમારું સંસ્થા requires Two-Factor Authentication (2FA). Enable 2FA
-      માં તમારું એકાઉન્ટ સેટિંગ્સ માટે an additional layer ના protection.
+    message: To enhance the security of your account, your organization requires Two-Factor Authentication (2FA). Enable 2FA in your account settings for an additional layer of protection.
     button-text: Setup 2FA
+
   comment-thread:
     publish-comment-button-text: Publish comment
     publish-reply-button-text: Publish reply
     reply-comment-button-text: Reply
     edit-comment-button-text: સંપાદિત કરો
     delete-comment-button-text: કાઢી નાખો
-    comment-published-ago: '{createdAgo} ago'
-    comment-input-placeholder: Input a નવું comment...
-    comment-reply-placeholder: Input તમારું reply...
-    comment-input-empty-notification: તમે cannot publish empty comments...
+    comment-published-ago: >-
+            {createdAgo} ago
+    comment-input-placeholder: Input a new comment...
+    comment-reply-placeholder: Input your reply...
+    comment-input-empty-notification: You cannot publish empty comments...
     comment-min-length-notification: Comment must be atleast 2 characters
+
   dashboard:
-    select-dashboard: પસંદ કરો ડેશબોર્ડ
-    create-new-dashboard: બનાવો નવું ડેશબોર્ડ
-    create-a-new-dashboard: બનાવો a નવું ડેશબોર્ડ
-    confirm-create-dashboard: બનાવો ડેશબોર્ડ!
-    edit-layout: સંપાદિત કરો layout
+    select-dashboard: Select Dashboard
+    create-new-dashboard: Create new Dashboard
+    create-a-new-dashboard: Create a new Dashboard
+    confirm-create-dashboard: Create Dashboard!
+    edit-layout: Edit layout
     add-widgets: Add widgets
-    delete-dashboard: કાઢી નાખો ડેશબોર્ડ
-    save-dashboard: સાચવો ડેશબોર્ડ
-    you-cannot-delete-this-dashboard: તમે cannot કાઢી નાખો આ ડેશબોર્ડ.
-    are-you-sure-you-want-delete-dashboard: છે તમે sure to કાઢી નાખો આ {dashboardName}?
-    create-to-customize-hint: બનાવો a ડેશબોર્ડ to customize widgets.
+    delete-dashboard: Delete dashboard
+    save-dashboard: Save Dashboard
+    you-cannot-delete-this-dashboard: You cannot delete this dashboard.
+    are-you-sure-you-want-delete-dashboard: Are you sure to delete this {dashboardName}?
+    create-to-customize-hint: Create a dashboard to customize widgets.
+
   dashboard-widget-panel:
-    widget-name: '{widgetName} Widget'
-    select-widgets: પસંદ કરો Widgets
-    close-and-save: Close અને સાચવો
+    widget-name: >-
+      {widgetName} Widget
+    select-widgets: Select Widgets
+    close-and-save: Close and Save
+
 services:
   dashboard-service:
-    create-dashboard-success-notification: નવું ડેશબોર્ડ `{dashboardName}` created succesfully.
-    delete-dashboard-success-notification: ડેશબોર્ડ `{dashboardName}` was deleted.
+    create-dashboard-success-notification: New dashboard `{dashboardName}` created succesfully.
+    delete-dashboard-success-notification: Dashboard `{dashboardName}` was deleted.
+
 auth:
   verification:
-    header-title: એકાઉન્ટ Verification
-    title: ચકાસો તમારું ઇમેઇલ સરનામું
-    message-text: <strong>Almost done!</strong><br> Check તમારું ઇમેઇલ માટે a verification code.
-    verification-code-text: દાખલ કરો the verification code તમે received via ઇમેઇલ.
+    header-title: Account Verification
+    title: Verify your email address
+    message-text: <strong>Almost done!</strong><br> Check your email for a verification code.
+    verification-code-text: Enter the verification code you received via email.
     verification-input-label: Verification Code
-    verify-button-text: ચકાસો & ચાલુ રાખો
+    verify-button-text: Verify & Continue
     didnt-receive-a-code: Didn't receive a code yet?
     not-sent:
       message: Didn't receive a code yet?
-      alternative-choice: Use alternaitve options below to ચકાસો તમારું એકાઉન્ટ.
-      resend-email: Resend ઇમેઇલ
+      alternative-choice: Use alternaitve options below to verify your account.
+      resend-email: Resend Email
       send-by-sms: Send by SMS
+
   two-fa:
     verify-code:
       verification-code: Verification Code
-      check-title: Check તમારું ઇમેઇલ અથવા ફોન
-      check-subtitle: We've sent તમે a verification code. દાખલ કરો the code below to complete the લૉગિન process.
-      expired-help-text: તમારું 2FA authentication code has expired. તમે can request another code if તમે need more સમય.
+      check-title: Check your email or phone
+      check-subtitle: We've sent you a verification code. Enter the code below to complete the login process.
+      expired-help-text: Your 2FA authentication code has expired. You can request another code if you need more time.
       resend-code: Resend Code
-      verify-code: ચકાસો Code
+      verify-code: Verify Code
       cancel-two-factor: Cancel Two-Factor
-      invalid-session-error-notification: અમાન્ય session. કૃપા કરીને try again.
+      invalid-session-error-notification: Invalid session. Please try again.
       verification-successful-notification: Verification successful!
-      verification-code-expired-notification: Verification code has expired. કૃપા કરીને request a નવું one.
-      verification-code-failed-notification: Verification નિષ્ફળ. કૃપા કરીને try again.
-    resend-code:
-      verification-code-resent-notification: નવું verification code sent.
-      verification-code-resent-error-notification: ભૂલ resending verification code. કૃપા કરીને try again.
+      verification-code-expired-notification: Verification code has expired. Please request a new one.
+      verification-code-failed-notification: Verification failed. Please try again.
+
+    resend-code: 
+      verification-code-resent-notification: New verification code sent.
+      verification-code-resent-error-notification: Error resending verification code. Please try again.
+
   forgot-password:
-    success-message: Check તમારું ઇમેઇલ to ચાલુ રાખો!
-    is-sent:
+    success-message: Check your email to continue!
+    is-sent:  
       title: Almost Done!
-      message: <strong>Check તમારું ઇમેઇલ!</strong><br> We've sent તમે a magic link to તમારું ઇમેઇલ which will allow તમે to
-        reset તમારું પાસવર્ડ. The link expires માં 15 minutes.
+      message: <strong>Check your email!</strong><br> We've sent you a magic link to your email which will allow you to reset your password. The link expires in 15 minutes.
     not-sent:
-      title: Forgot તમારું પાસવર્ડ?
-      message: <strong>Don't worry, we've got તમારું back.</strong><br> દાખલ કરો the ઇમેઇલ તમે use to લૉગિન to {appName} અને
-        we will send તમે a secure link to reset તમારું પાસવર્ડ.
+      title: Forgot your password?
+      message: <strong>Don't worry, we've got your back.</strong><br> Enter the email you use to login to {appName} and we will send you a secure link to reset your password.
     form:
-      email-label: તમારું ઇમેઇલ સરનામું
+      email-label: Your email address
       submit-button: OK, Send me a magic link!
       nevermind-button: Nevermind
+
   login:
-    title: Sign માં to તમારું એકાઉન્ટ
-    no-identity-notification: Did તમે forget to દાખલ કરો તમારું ઇમેઇલ?
-    no-password-notification: Did તમે forget to દાખલ કરો તમારું પાસવર્ડ?
-    unverified-notification: તમારું એકાઉન્ટ needs to be verified to proceed.
-    password-reset-required: A પાસવર્ડ reset છે જરૂરી to ચાલુ રાખો.
+    title: Sign in to your account
+    no-identity-notification: Did you forget to enter your email?
+    no-password-notification: Did you forget to enter your password?
+    unverified-notification: Your account needs to be verified to proceed.
+    password-reset-required: A password reset is required to continue.
     failed-attempt:
-      message: <strong>Forgot તમારું પાસવર્ડ?</strong><br> Click the બટન below to reset તમારું પાસવર્ડ.
-      button-text: Ok, મદદ me reset!
+      message: <strong>Forgot your password?</strong><br> Click the button below to reset your password.
+      button-text: Ok, help me reset!
+
     form:
-      email-label: ઇમેઇલ સરનામું
-      password-label: પાસવર્ડ
+      email-label: Email address
+      password-label: Password
       remember-me-label: Remember me
-      forgot-password-label: Forgot તમારું પાસવર્ડ?
-      sign-in-button: Sign માં
-      create-account-button: બનાવો a નવું એકાઉન્ટ
+      forgot-password-label: Forgot your password?
+      sign-in-button: Sign in
+      create-account-button: Create a new Account
     slow-connection-message: Experiencing connectivity issues.
+
   reset-password:
-    success-message: તમારું પાસવર્ડ has been reset! લૉગિન to ચાલુ રાખો.
-    invalid-verification-code: આ reset પાસવર્ડ link છે અમાન્ય અથવા expired.
-    title: Reset તમારું પાસવર્ડ
+    success-message: Your password has been reset! Login to continue.
+    invalid-verification-code: This reset password link is invalid or expired.
+    title: Reset your password
     form:
       code:
-        label: તમારું reset code
-        help-text: The verification code તમે received માં તમારું ઇમેઇલ.
+        label: Your reset code
+        help-text: The verification code you received in your email.
       password:
-        label: નવું પાસવર્ડ
-        help-text: દાખલ કરો a પાસવર્ડ at-least 6 characters to ચાલુ રાખો.
+        label: New Password
+        help-text: Enter a password at-least 6 characters to continue.
       confirm-password:
-        label: પુષ્ટિ નવું પાસવર્ડ
-        help-text: દાખલ કરો a પાસવર્ડ at-least 6 characters to ચાલુ રાખો.
-      submit-button: Reset પાસવર્ડ
+        label: Confirm new Password
+        help-text: Enter a password at-least 6 characters to continue.
+      submit-button: Reset Password
       back-button: પાછળ
+
   confirm-email-change:
-    success-message: તમારું ઇમેઇલ સરનામું has been updated.
-    invalid-verification-code: આ ઇમેઇલ change link છે અમાન્ય અથવા expired.
-    title: પુષ્ટિ ઇમેઇલ change
-    message-text: પુષ્ટિ આ change to અપડેટ the લૉગિન ઇમેઇલ માટે તમારું FleetIndia એકાઉન્ટ.
+    success-message: Your email address has been updated.
+    invalid-verification-code: This email change link is invalid or expired.
+    title: Confirm email change
+    message-text: Confirm this change to update the login email for your FleetIndia account.
     form:
       code:
         label: Confirmation code
-        help-text: તમારા ઇમેઇલમાંથી પુષ્ટિ કોડ.
-      submit-button: પુષ્ટિ ઇમેઇલ Change
+        help-text: The confirmation code from your email.
+      submit-button: Confirm Email Change
       back-button: પાછળ
+
 console:
   create-or-join-organization:
-    modal-title: બનાવો અથવા જોડાઓ a સંસ્થા
-    join-success-notification: તમે have joined a નવું સંસ્થા!
-    create-success-notification: તમે have created a નવું સંસ્થા!
+    modal-title: Create or join a organization
+    join-success-notification: You have joined a new organization!
+    create-success-notification: You have created a new organization!
+
   switch-organization:
-    modal-title: છે તમે sure તમે want to switch સંસ્થા to {organizationName}?
-    modal-body: By confirming તમારું એકાઉન્ટ will remain logged માં, but તમારું primary સંસ્થા will be switched.
-    modal-accept-button-text: Yes, I want to switch સંસ્થા
-    success-notification: તમે have switched organizations
+    modal-title: Are you sure you want to switch organization to {organizationName}?
+    modal-body: By confirming your account will remain logged in, but your primary organization will be switched.
+    modal-accept-button-text: Yes, I want to switch organization
+    success-notification: You have switched organizations
+
   account:
-    index:
-      upload-new: Upload નવું
-      phone: તમારું ફોન number.
+    index: 
+      upload-new: Upload new
+      phone: Your phone number.
       photos: photos
-      timezone: પસંદ કરો તમારું સમય ઝોન.
+      timezone: Select your timezone.
+
   admin:
     menu:
       overview: Overview
@@ -639,15 +680,16 @@ console:
       push-notifications: Push Notifications
     schedule-monitor:
       schedule-monitor: Schedule Monitor
-      task-logs-for: 'Task Logs માટે:'
+      task-logs-for: >-
+        Task Logs For: 
       showing-last-count: Showing last {count} logs
-      name: નામ
-      type: પ્રકાર
-      timezone: સમય ઝોન
+      name: Name
+      type: Type
+      timezone: Timezone
       last-started: Last Started
       last-finished: Last Finished
       last-failure: Last Failure
-      date: તારીખ
+      date: Date
       memory: Memory
       runtime: Runtime
       output: Output
@@ -659,20 +701,19 @@ console:
         title: Filesystem Configuration
       mail:
         title: Mail Configuration
-      notification-channels:
+      notification-channels: 
         title: Push Notifications Configuration
       queue:
         title: Queue Configuration
       services:
-        title: સેવાઓ કોન્ફિગરેશન
+        title: Services Configuration
       socket:
         title: Socket Configuration
     platform-api-token:
       title: Platform API Token
-      description: Manage the platform API token used by trusted integrations to access protected platform endpoints such
-        as the organization directory.
+      description: Manage the platform API token used by trusted integrations to access protected platform endpoints such as the organization directory.
       loading: Loading platform API token status...
-      status: સ્થિતિ
+      status: Status
       configured: Configured
       not-configured: Not configured
       last-rotated: Last rotated
@@ -681,9 +722,9 @@ console:
       generate-token: Generate Token
       rotate-token: Rotate Token
       revoke-token: Revoke Token
-      one-time-warning: Copy આ token now. It will not be shown again.
+      one-time-warning: Copy this token now. It will not be shown again.
       rotate-confirm-title: Rotate platform API token?
-      rotate-warning: Rotating આ token immediately invalidates integrations using the previous token.
+      rotate-warning: Rotating this token immediately invalidates integrations using the previous token.
       revoke-confirm-title: Revoke platform API token?
       revoke-warning: Revoking disables platform-token access to protected platform endpoints.
       generated: Platform API token generated.
@@ -691,110 +732,115 @@ console:
       revoked: Platform API token revoked.
       copied: Platform API token copied to clipboard.
     branding:
-      title: Branding
+      title: બ્રાન્ડિંગ
       icon-text: Icon
-      upload-new: Upload નવું
+      upload-new: Upload new
       reset-default: Reset to default
       logo-text: Logo
       theme: Default Theme
     index:
-      total-users: કુલ Users
-      total-organizations: કુલ Organizations
-      total-transactions: કુલ Transactions
+      total-users: Total Users
+      total-organizations: Total Organizations
+      total-transactions: Total Transactions
     notifications:
       title: Notifications
-      notification-settings: સૂચના સેટિંગ્સ
+      notification-settings: Notification Settings
     organizations:
       index:
         title: Organizations
         owner-name-column: Owner
-        owner-phone-column: Owner ફોન
-        owner-email-column: Owner ફોન
-        users-count-column: વપરાશકર્તાઓ
-        phone-column: ફોન
-        email-column: ઇમેઇલ
+        owner-phone-column: Owner Phone
+        owner-email-column: Owner Phone
+        users-count-column: Users
+        phone-column: Phone
+        email-column: Email
       users:
-        title: વપરાશકર્તાઓ
+        title: Users
+
   settings:
     index:
-      title: સંસ્થા સેટિંગ્સ
-      organization-name: સંસ્થા નામ
-      organization-description: સંસ્થા વર્ણન
-      organization-phone: સંસ્થા ફોન number
-      organization-currency: સંસ્થા ચલણ
-      organization-id: સંસ્થા ID
-      organization-branding: સંસ્થા Branding
+      title: Organization Settings
+      organization-name: Organization name
+      organization-description: Organization description
+      organization-phone: Organization phone number
+      organization-currency: Organization currency
+      organization-id: Organization ID
+      organization-branding: Organization Branding
       logo: Logo
-      logo-help-text: Logo માટે તમારું સંસ્થા.
-      upload-new-logo: Upload નવું logo
+      logo-help-text: Logo for your organization.
+      upload-new-logo: Upload new logo
       backdrop: Backdrop
-      backdrop-help-text: વૈકલ્પિક banner અથવા background image માટે તમારું સંસ્થા.
-      upload-new-backdrop: Upload નવું backdrop
-      organization-timezone: પસંદ કરો the default સમય ઝોન માટે તમારું સંસ્થા.
-      select-timezone: પસંદ કરો સમય ઝોન.
+      backdrop-help-text: Optional banner or background image for your organization.
+      upload-new-backdrop: Upload new backdrop
+      organization-timezone: Select the default timezone for your organization.
+      select-timezone: Select timezone.
+
   extensions:
-    title: Extensions છે coming soon!
-    message: કૃપા કરીને check back માં the upcoming versions as we prepare to launch the Extensions repository અને marketplace.
+    title: Extensions are coming soon!
+    message: Please check back in the upcoming versions as we prepare to launch the Extensions repository and marketplace.
+
   notifications:
-    select-all: પસંદ કરો બધા
+    select-all: Select All
     mark-as-read: Mark as Read
-    received: 'Received:'
-    message: પ્રદર્શિત કરવા માટે કોઈ સૂચનાઓ નથી.
+    received: >-
+        Received:
+    message: No notifications to display.
+
 invite:
   for-users:
-    invitation-message: You've been invited to જોડાઓ {companyName}
-    invitation-sent-message: You've been invited to જોડાઓ the {companyName} સંસ્થા પર {appName}. To accept આ invitation, input
-      તમારું invitation code received by ઇમેઇલ અને click ચાલુ રાખો.
-    invitation-code-sent-text: તમારું invitiation code
+    invitation-message: You've been invited to join {companyName}
+    invitation-sent-message: You've been invited to join the {companyName} organization on {appName}. To accept this invitation, input your invitation code received by email and click continue.
+    invitation-code-sent-text: Your invitiation code
     accept-invitation-text: Accept Invitation
+
 onboard:
   index:
-    title: બનાવો તમારું એકાઉન્ટ
-    welcome-title: <strong>સ્વાગત છે to {companyName}!</strong><br />
-    welcome-text: Complete the વિગતો જરૂરી below to get started.
-    full-name: સંપૂર્ણ નામ
-    full-name-help-text: તમારું સંપૂર્ણ નામ
-    your-email: ઇમેઇલ સરનામું
-    your-email-help-text: તમારું ઇમેઇલ સરનામું
-    phone: ફોન number
-    phone-help-text: તમારું ફોન number
-    organization-name: સંસ્થા નામ
-    organization-help-text: તમારું સંસ્થા નામ, બધા તમારું services અને resources will be managed under આ સંસ્થા, later તમે
-      can બનાવો as many organizations as તમે want અથવા need.
-    password: દાખલ કરો a પાસવર્ડ
-    password-help-text: તમારું પાસવર્ડ, make sure it's a good one.
-    confirm-password: પુષ્ટિ તમારું પાસવર્ડ
-    confirm-password-help-text: Just to પુષ્ટિ the પાસવર્ડ તમે entered above.
-    continue-button-text: ચાલુ રાખો
+    title: Create your account
+    welcome-title: <strong>Welcome to {companyName}!</strong><br />
+    welcome-text: Complete the details required below to get started.
+    full-name: Full name
+    full-name-help-text: Your full name
+    your-email: Email address
+    your-email-help-text: Your email address
+    phone: Phone number
+    phone-help-text: Your phone number
+    organization-name: Organization name
+    organization-help-text: Your organization name, all your services and resources will be managed under this organization, later you can create as many organizations as you want or need.
+    password: Enter a password
+    password-help-text: Your password, make sure it's a good one.
+    confirm-password: Confirm your password
+    confirm-password-help-text: Just to confirm the password you entered above.
+    continue-button-text: Continue
   verify-email:
-    header-title: એકાઉન્ટ Verification
-    title: ચકાસો તમારું ઇમેઇલ સરનામું
-    message-text: <strong>Almost done!</strong><br> Check તમારું ઇમેઇલ માટે a verification code.
-    verification-code-text: દાખલ કરો the verification code તમે received via ઇમેઇલ.
+    header-title: Account Verification
+    title: Verify your email address
+    message-text: <strong>Almost done!</strong><br> Check your email for a verification code.
+    verification-code-text: Enter the verification code you received via email.
     verification-input-label: Verification Code
-    verify-button-text: ચકાસો & ચાલુ રાખો
+    verify-button-text: Verify & Continue
     didnt-receive-a-code: Didn't receive a code yet?
     not-sent:
       message: Didn't receive a code yet?
-      alternative-choice: Use alternaitve options below to ચકાસો તમારું એકાઉન્ટ.
-      resend-email: Resend ઇમેઇલ
+      alternative-choice: Use alternaitve options below to verify your account.
+      resend-email: Resend Email
       send-by-sms: Send by SMS
+
 install:
-  not-configured-title: FleetIndia છે not installed અથવા configured
-  not-configured-message: Complete setup થી the FleetIndia CLI અથવા application container, then reload આ page once the database,
-    migrations, અને seed data છે ready.
+  not-configured-title: FleetIndia is not installed or configured
+  not-configured-message: Complete setup from the FleetIndia CLI or application container, then reload this page once the database, migrations, and seed data are ready.
   running-locally-docs: See running locally docs
   cloud-docs: See cloud deployment docs
   refreshing: Installation complete, refreshing...
+
 layout:
   header:
     menus:
       organization:
-        settings: સંસ્થા સેટિંગ્સ
-        create-or-join: બનાવો અથવા જોડાઓ organizations
+        settings: Organization settings
+        create-or-join: Create or join organizations
         explore-extensions: Explore extensions
       user:
-        view-profile: View પ્રોફાઇલ
+        view-profile: View profile
         keyboard-shortcuts: Show keyboard shortcuts
         changelog: Changelog
 india:
