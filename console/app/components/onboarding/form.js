@@ -1,12 +1,13 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
-import { action, getProperties } from '@ember/object';
+import { getProperties } from '@ember/object';
 import { isBlank } from '@ember/utils';
 import { task } from 'ember-concurrency';
 import OnboardValidations from '../../validations/onboard';
 import lookupValidator from 'ember-changeset-validations';
 import Changeset from 'ember-changeset';
+import { isValidGstin, normalizeGstin } from '../../utils/validators/gstin';
 
 export default class OnboardingFormComponent extends Component {
     @service fetch;
@@ -14,10 +15,14 @@ export default class OnboardingFormComponent extends Component {
     @service router;
     @service notifications;
     @service urlSearchParams;
+    @service intl;
     @tracked name;
     @tracked email;
     @tracked phone;
     @tracked organization_name;
+    @tracked gstin = '';
+    @tracked pin_code = '';
+    @tracked state = '';
     @tracked password;
     @tracked password_confirmation;
     @tracked error;
@@ -44,8 +49,19 @@ export default class OnboardingFormComponent extends Component {
             return;
         }
 
-        // Set user timezone
+        // GSTIN is optional — validate format only when provided
+        if (!isValidGstin(this.gstin, { required: false })) {
+            this.notifications.error(this.intl.t('india.gstin-invalid'));
+            return;
+        }
+
+        // Set user timezone and India defaults
         input.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        input.currency = 'INR';
+        input.country = 'IN';
+        input.gstin = normalizeGstin(this.gstin) || null;
+        input.postal_code = this.pin_code || null;
+        input.state = this.state || null;
 
         try {
             const { status, skipVerification, token, session } = yield this.fetch.post('onboard/create-account', input);
@@ -62,7 +78,7 @@ export default class OnboardingFormComponent extends Component {
                 this.session.isOnboarding().manuallyAuthenticate(token);
 
                 yield this.router.transitionTo('console');
-                return this.notifications.success('Welcome to Fleetbase!');
+                return this.notifications.success('Welcome to FleetIndia!');
             } else {
                 this.args.orchestrator.next();
                 this.urlSearchParams.setParamsToCurrentUrl({

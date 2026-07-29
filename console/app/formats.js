@@ -23,5 +23,9 @@ export default {
             style: 'currency',
             currency: 'USD',
         },
+        INR: {
+            style: 'currency',
+            currency: 'INR',
+        },
     },
 };

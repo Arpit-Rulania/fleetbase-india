@@ -25,6 +25,10 @@ module.exports = function (environment) {
             extensions: asArray(getenv('EXTENSIONS')),
             disableRuntimeConfig: toBoolean(getenv('DISABLE_RUNTIME_CONFIG', environment === 'production')),
             disableFleetbaseAttribution: toBoolean(getenv('DISABLE_FLEETBASE_ATTRIBUTION', false)),
+            corePlatformUrl: getenv('CORE_PLATFORM_URL', 'http://localhost:3010'),
+            appName: getenv('APP_NAME', 'FleetIndia'),
+            supportEmail: getenv('SUPPORT_EMAIL', 'support@fleetindia.local'),
+            supportUrl: getenv('SUPPORT_URL', 'https://fleetindia.local'),
         },
 
         API: {

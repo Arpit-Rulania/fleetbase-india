@@ -1,0 +1,22 @@
+// Calls core-platform via REST at this feature's route prefix. No business logic lives here — see
+// core-platform/src/modules/compliance/.
+import Service from '@ember/service';
+import { inject as service } from '@ember/service';
+import config from '@fleetbase/console/config/environment';
+
+export default class VahanConnectorService extends Service {
+    @service fetch;
+
+    get baseUrl() {
+        return config.APP.corePlatformUrl || 'http://localhost:3010';
+    }
+
+    request(path, options = {}) {
+        const url = `${this.baseUrl}/api/compliance${path}`;
+        return this.fetch.request(url, { ...options, external: true });
+    }
+
+    lookupVehicle(registrationNumber) {
+        return this.request('/vahan/lookup', { method: 'POST', body: { registrationNumber } });
+    }
+}

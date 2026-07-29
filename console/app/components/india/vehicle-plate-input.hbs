@@ -1,0 +1,13 @@
+<div class="india-vehicle-plate-input" ...attributes>
+    <label class="form-label">{{t "india.vehicle-plate"}}</label>
+    <input
+        type="text"
+        class="form-input w-full {{if this.error "border-red-500"}}"
+        placeholder={{this.hint}}
+        value={{this.value}}
+        {{on "input" this.onInput}}
+    />
+    {{#if this.error}}
+        <p class="text-sm text-red-600 mt-1">{{this.error}}</p>
+    {{/if}}
+</div>

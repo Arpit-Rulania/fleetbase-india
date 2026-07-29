@@ -15,6 +15,10 @@ const RUNTIME_CONFIG_MAP = {
     SOCKETCLUSTER_PORT: 'socket.port',
     OSRM_HOST: 'osrm.host',
     EXTENSIONS: 'APP.extensions',
+    CORE_PLATFORM_URL: 'APP.corePlatformUrl',
+    appName: 'APP.appName',
+    supportEmail: 'APP.supportEmail',
+    supportUrl: 'APP.supportUrl',
 };
 
 /**

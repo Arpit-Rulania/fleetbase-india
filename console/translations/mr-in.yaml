@@ -1,0 +1,808 @@
+app:
+  name: FleetIndia
+common:
+  new: नवीन
+  create: तयार करा
+  add: जोडा
+  edit: संपादित करा
+  update: अपडेट करा
+  save: जतन करा
+  save-changes: बदल जतन करा
+  delete: हटवा
+  delete-selected: निवडलेले हटवा
+  delete-selected-count: निवडलेले {count} हटवा
+  your-profile: तुमची प्रोफाइल
+  date-of-birth: जन्मतारीख
+  organization: संस्था
+  two-factor: दोन-घटक
+  remove: काढा
+  cancel: रद्द करा
+  confirm: पुष्टी करा
+  close: बंद करा
+  open: उघडा
+  view: पहा
+  preview: पूर्वावलोकन
+  upload: अपलोड
+  download: डाउनलोड
+  import: आयात
+  export: निर्यात
+  print: प्रिंट
+  duplicate: डुप्लिकेट
+  copy: कॉपी
+  paste: पेस्ट
+  share: शेअर करा
+  refresh: रीफ्रेश
+  reset: रीसेट
+  retry: पुन्हा प्रयत्न
+  back: मागे
+  next: पुढील
+  previous: मागील
+  submit: सबमिट करा
+  apply: Apply
+  continue: सुरू ठेवा
+  proceed: Proceed
+  select: निवडा
+  deselect: Deselect
+  search: शोधा
+  filter: फिल्टर
+  sort: Sort
+  view-all: View सर्व
+  clear: Clear
+  done: Done
+  finish: Finish
+  skip: Skip
+  method: Method
+  bulk-delete: Bulk हटवा
+  bulk-delete-resource: Bulk हटवा {resource}
+  bulk-cancel: Bulk Cancel
+  bulk-cancel-resource: Bulk Cancel {resource}
+  bulk-actions: Bulk Actions
+  column: Column
+  row: Row
+  table: Table
+  list: List
+  grid: Grid
+  form: Form
+  field: Field
+  section: Section
+  panel: Panel
+  card: Card
+  tab: Tab
+  modal: Modal
+  dialog: Dialog
+  menu: Menu
+  dropdown: Dropdown
+  tooltip: Tooltip
+  sidebar: Sidebar
+  toolbar: Toolbar
+  footer: Footer
+  header: Header
+  title: शीर्षक
+  subtitle: Subtitle
+  description: वर्णन
+  placeholder: Placeholder
+  label: Label
+  button: बटण
+  icon: Icon
+  avatar: Avatar
+  link: Link
+  badge: Badge
+  tag: Tag
+  banner: Banner
+  step: पाऊल
+  progress: Progress
+  map: Map
+  board: Board
+  loading: लोड होत आहे
+  loading-resource: लोड होत आहे {resource}
+  saving: जतन होत आहे
+  processing: Processing
+  fetching: Fetching
+  updating: Updating
+  uploading: Uploading
+  completed: Completed
+  success: यशस्वी
+  failed: अयशस्वी
+  error: त्रुटी
+  warning: चेतावणी
+  info: Info
+  ready: Ready
+  activity: Activity
+  active: Active
+  inactive: Inactive
+  enabled: Enabled
+  disabled: Disabled
+  online: Online
+  offline: Offline
+  pending: Pending
+  archived: Archived
+  hidden: Hidden
+  visible: Visible
+  empty: Empty
+  not-found: Not Found
+  no-results: No Results
+  try-again: Try Again
+  are-you-sure: आहेत तुम्ही sure?
+  changes-saved: Changes saved successfully.
+  saved-successfully: Changes saved successfully.
+  field-saved: '{field} saved successfully.'
+  changes-discarded: Changes discarded.
+  delete-confirm: आहेत तुम्ही sure तुम्ही want to हटवा हे item?
+  action-successful: Action completed successfully.
+  action-failed: Action अयशस्वी. कृपया try again.
+  something-went-wrong: Something went wrong.
+  please-wait: कृपया wait...
+  sign-in: साइन इन
+  sign-out: Sign Out
+  sign-up: साइन अप
+  log-in: Log मध्ये
+  log-out: Log Out
+  register: Register
+  forgot-password: Forgot पासवर्ड
+  reset-password: Reset पासवर्ड
+  change-password: Change पासवर्ड
+  password: पासवर्ड
+  confirm-password: पासवर्डची पुष्टी करा
+  email: ईमेल
+  username: Username
+  remember-me: Remember Me
+  welcome: स्वागत आहे
+  welcome-back: स्वागत आहे Back
+  profile: प्रोफाइल
+  account: खाते
+  settings: सेटिंग्ज
+  preferences: Preferences
+  record: Record
+  records: Records
+  item: Item
+  items: Items
+  entry: Entry
+  entries: Entries
+  id: ID
+  name: नाव
+  type: प्रकार
+  category: Category
+  overview: Overview
+  value: Value
+  amount: रक्कम
+  price: Price
+  quantity: Quantity
+  status: स्थिती
+  date: तारीख
+  date-created: तारीख Created
+  date-updated: तारीख Updated
+  time: वेळ
+  created-at: Created At
+  updated-at: Updated At
+  expired-at: Expired at
+  last-seen-at: Last Seen At
+  last-modified: Last Modified
+  last-modified-data: 'Last Modified: {date}'
+  actions: Actions
+  details: तपशील
+  notes: Notes
+  reference: Reference
+  filter-by: फिल्टर By
+  filter-by-field: फिल्टर By {field}
+  sort-by: Sort By
+  ascending: Ascending
+  descending: Descending
+  all: सर्व
+  none: काहीही नाही
+  select-all: निवडा सर्व
+  deselect-all: Deselect सर्व
+  show-more: Show More
+  show-less: Show Less
+  page: Page
+  of: चा
+  total: एकूण
+  items-per-page: Items per page
+  showing: Showing
+  to: to
+  results: Results
+  load-more: Load More
+  no-more-results: No More Results
+  today: Today
+  yesterday: Yesterday
+  tomorrow: Tomorrow
+  day: Day
+  week: Week
+  month: Month
+  year: Year
+  date-range: तारीख Range
+  start-date: Start तारीख
+  end-date: End तारीख
+  time-zone: वेळ Zone
+  system: System
+  dashboard: डॅशबोर्ड
+  home: Home
+  analytics: Analytics
+  reports: Reports
+  logs: Logs
+  help: मदत
+  support: Support
+  contact: Contact
+  documentation: Documentation
+  language: भाषा
+  timezone: वेळ क्षेत्र
+  version: Version
+  theme: Theme
+  light-mode: Light Mode
+  dark-mode: Dark Mode
+  update-available: अपडेट Available
+  install-update: Install अपडेट
+  maintenance-mode: Maintenance Mode
+  notification: सूचना
+  notifications: Notifications
+  mark-as-read: Mark as Read
+  mark-all-as-read: Mark सर्व as Read
+  clear-notifications: Clear Notifications
+  company: कंपनी
+  companies: कंपन्या
+  user: वापरकर्ता
+  users: वापरकर्ते
+  role: Role
+  roles: Roles
+  permission: Permission
+  permissions: Permissions
+  group: Group
+  groups: Groups
+  unauthorized: Unauthorized
+  forbidden: Forbidden
+  resource-not-found: Resource Not Found
+  server-error: Server त्रुटी
+  validation-error: Validation त्रुटी
+  timeout-error: Request Timed Out
+  network-error: Network त्रुटी
+  unknown-error: Unknown त्रुटी
+  file: File
+  files: Files
+  folder: Folder
+  folders: Folder's
+  upload-file: Upload File
+  upload-files: Upload Files
+  upload-image: Upload Image
+  upload-image-supported: Supports PNGs, JPEGs आणि GIFs
+  choose-file: Choose File
+  choose-files: Choose Files
+  drag-and-drop: Drag आणि Drop
+  download-file: Download File
+  file-size: File Size
+  file-type: File प्रकार
+  confirm-delete: पुष्टी हटवा
+  confirm-action: पुष्टी Action
+  confirm-exit: पुष्टी Exit
+  confirm-and-save-changes: पुष्टी & जतन करा Changes
+  are-you-sure-exit: आहेत तुम्ही sure तुम्ही want to exit?
+  unsaved-changes-warning: तुम्ही have unsaved changes.
+  connected: Connected
+  disconnected: Disconnected
+  reconnecting: Reconnecting
+  connection-lost: Connection Lost
+  connection-restored: Connection Restored
+  show: Show
+  hide: Hide
+  expand: Expand
+  collapse: Collapse
+  enable: Enable
+  disable: Disable
+  minimize: Minimize
+  maximize: Maximize
+  restore: Restore
+  zoom-in: Zoom मध्ये
+  zoom-out: Zoom Out
+  fullscreen: Fullscreen
+  exit-fullscreen: Exit Fullscreen
+  true: true
+  false: false
+  ok: OK
+  none-available: काहीही नाही Available
+  default: Default
+  custom: Custom
+  general: General
+  advanced: Advanced
+  placeholder-text: प्रविष्ट करा मजकूर here...
+  learn-more: Learn More
+  view-resource: View {resource}
+  view-resource-details: View {resource} तपशील
+  create-a-new-resource: तयार करा a नवीन {resource}
+  create-new-resource: तयार करा नवीन {resource}
+  search-resource: शोध {resource}
+  new-resource: नवीन {resource}
+  update-resource: अपडेट {resource}
+  save-resource-changes: जतन करा {resource} Changes
+  creating-resource: Creating {resource}
+  cancel-resource: Cancel {resource}
+  delete-resource: हटवा {resource}
+  delete-resource-name: 'हटवा: {resourceName}'
+  resource-actions: '{resource} Actions'
+  resource-location: '{resource} Location'
+  delete-resource-named: हटवा {resource} ({resourceName})
+  delete-resource-prompt: हे action cannot be undone. Once deleted, the record will be permanently removed.
+  delete-cannot-be-undone: हे action cannot be undone. Once deleted, the record will be permanently removed.
+  create-resource: तयार करा {resource}
+  edit-resource: संपादित करा {resource}
+  edit-resource-details: संपादित करा {resource} तपशील
+  edit-resource-type-name: 'संपादित करा {resource}: {resourceName}'
+  edit-resource-name: 'संपादित करा: {resourceName}'
+  config: Config
+  select-field: निवडा {field}
+  columns: Columns
+  metadata: Metadata
+  meta: Meta
+  resource-created-success: नवीन {resource} created successfully.
+  resource-created-success-name: नवीन {resource} ({resourceName}) created successfully.
+  resource-updated-success: '{resource} ({resourceName}) updated successfully.'
+  resource-action-success: '{resource} ({resourceName}) {action} successfully.'
+  resource-deleted-success: '{resource} ({resourceName}) deleted successfully.'
+  resource-deleted: '{resource} ({resourceName}) deleted.'
+  continue-without-saving: सुरू ठेवा Without Saving?
+  continue-without-saving-prompt: तुम्ही have unsaved changes to हे {resource}. Continuing will discard them. Click सुरू ठेवा
+    to proceed.
+  changelog: Changelog
+  reload: Reload
+resource:
+  alert: Alert
+  alerts: Alerts
+  brand: Brand
+  brands: Brands
+  category: Category
+  categories: Categories
+  chat-attachment: Chat Attachment
+  chat-attachments: Chat Attachments
+  chat-channel: Chat Channel
+  chat-channels: Chat Channels
+  chat-log: Chat Log
+  chat-logs: Chat Logs
+  chat-message: Chat संदेश
+  chat-messages: Chat Messages
+  chat-participant: Chat Participant
+  chat-participants: Chat Participants
+  chat-receipt: Chat Receipt
+  chat-receipts: Chat Receipts
+  comment: Comment
+  comments: Comments
+  company: कंपनी
+  companies: Companies
+  custom-field-value: Custom Field Value
+  custom-field-values: Custom Field Values
+  custom-field: Custom Field
+  custom-fields: Custom Fields
+  dashboard-widget: डॅशबोर्ड Widget
+  dashboard-widgets: डॅशबोर्ड Widgets
+  dashboard: डॅशबोर्ड
+  dashboards: Dashboards
+  extension: Extension
+  extensions: Extensions
+  file: File
+  files: Files
+  group: Group
+  groups: Groups
+  notification: सूचना
+  notifications: Notifications
+  permission: Permission
+  permissions: Permissions
+  policy: Policy
+  policies: Policies
+  report: Report
+  reports: Reports
+  role: Role
+  roles: Roles
+  setting: Setting
+  settings: सेटिंग्ज
+  transaction: Transaction
+  transactions: Transactions
+  user-device: वापरकर्ता Device
+  user-devices: वापरकर्ता Devices
+  user: वापरकर्ता
+  users: वापरकर्ते
+  country: देश
+dropzone:
+  file: file
+  drop-to-upload: Drop to upload
+  invalid: अवैध
+  files-ready-for-upload: '{numOfFiles} ready साठी upload.'
+  upload-images-videos: Upload Images & Videos
+  upload-documents: Upload Documents
+  upload-documents-files: Upload Documents & Files
+  upload-avatar-files: Upload Custom Avatars
+  dropzone-supported-images-videos: Drag आणि drop image आणि video files onto हे dropzone
+  dropzone-supported-avatars: Drag आणि drop SVG किंवा PNG files
+  dropzone-supported-files: Drag आणि drop files onto हे dropzone
+  or-select-button-text: किंवा निवडा files to upload.
+  upload-queue: Upload Queue
+  uploading: Uploading...
+two-fa-enforcement-alert:
+  message: To enhance the security चा तुमचा खाते, तुमचा संस्था requires Two-Factor Authentication (2FA). Enable 2FA मध्ये
+    तुमचा खाते सेटिंग्ज साठी an additional layer चा protection.
+  button-text: Setup 2FA
+comment-thread:
+  publish-comment-button-text: Publish comment
+  publish-reply-button-text: Publish reply
+  reply-comment-button-text: Reply
+  edit-comment-button-text: संपादित करा
+  delete-comment-button-text: हटवा
+  comment-published-ago: '{createdAgo} ago'
+  comment-input-placeholder: Input a नवीन comment...
+  comment-reply-placeholder: Input तुमचा reply...
+  comment-input-empty-notification: तुम्ही cannot publish empty comments...
+  comment-min-length-notification: Comment must be atleast 2 characters
+dashboard:
+  select-dashboard: निवडा डॅशबोर्ड
+  create-new-dashboard: तयार करा नवीन डॅशबोर्ड
+  create-a-new-dashboard: तयार करा a नवीन डॅशबोर्ड
+  confirm-create-dashboard: तयार करा डॅशबोर्ड!
+  edit-layout: संपादित करा layout
+  add-widgets: Add widgets
+  delete-dashboard: हटवा डॅशबोर्ड
+  save-dashboard: जतन करा डॅशबोर्ड
+  you-cannot-delete-this-dashboard: तुम्ही cannot हटवा हे डॅशबोर्ड.
+  are-you-sure-you-want-delete-dashboard: आहेत तुम्ही sure to हटवा हे {dashboardName}?
+dashboard-widget-panel:
+  widget-name: '{widgetName} Widget'
+  select-widgets: निवडा Widgets
+  close-and-save: Close आणि जतन करा
+  filter-widgets: विजेट शोधा…
+  no-widgets-match: No widgets match तुमचा filters.
+  tab-all: सर्व
+  tab-default: Recommended
+  tab-added: वर डॅशबोर्ड
+  badge-default: Default
+  add: जोडा
+  add-another: Add another
+filters-picker:
+  filters: Filters
+  filter-data: फिल्टर Data
+visible-column-picker:
+  select-viewable-columns: निवडा viewable columns
+  customize-columns: Customize Columns
+component:
+  file:
+    dropdown-label: File actions
+  import-modal:
+    loading-message: Processing import...
+    drop-upload: Drop to upload
+    invalid: अवैध
+    ready-upload: ready साठी upload.
+    upload-spreadsheets: Upload Spreadsheets
+    drag-drop: Drag आणि drop spreadsheet files onto हे dropzone
+    button-text: किंवा निवडा spreadsheets to upload
+    spreadsheets: spreadsheets
+    upload-queue: Upload Queue
+  dropzone:
+    file: file
+    drop-to-upload: Drop to upload
+    invalid: अवैध
+    files-ready-for-upload: '{numOfFiles} ready साठी upload.'
+    upload-images-videos: Upload Images & Videos
+    upload-documents: Upload Documents
+    upload-documents-files: Upload Documents & Files
+    upload-avatar-files: Upload Custom Avatars
+    dropzone-supported-images-videos: Drag आणि drop image आणि video files onto हे dropzone
+    dropzone-supported-avatars: Drag आणि drop SVG किंवा PNG files
+    dropzone-supported-files: Drag आणि drop files onto हे dropzone
+    or-select-button-text: किंवा निवडा files to upload.
+    upload-queue: Upload Queue
+    uploading: Uploading...
+  two-fa-enforcement-alert:
+    message: To enhance the security चा तुमचा खाते, तुमचा संस्था requires Two-Factor Authentication (2FA). Enable 2FA मध्ये
+      तुमचा खाते सेटिंग्ज साठी an additional layer चा protection.
+    button-text: Setup 2FA
+  comment-thread:
+    publish-comment-button-text: Publish comment
+    publish-reply-button-text: Publish reply
+    reply-comment-button-text: Reply
+    edit-comment-button-text: संपादित करा
+    delete-comment-button-text: हटवा
+    comment-published-ago: '{createdAgo} ago'
+    comment-input-placeholder: Input a नवीन comment...
+    comment-reply-placeholder: Input तुमचा reply...
+    comment-input-empty-notification: तुम्ही cannot publish empty comments...
+    comment-min-length-notification: Comment must be atleast 2 characters
+  dashboard:
+    select-dashboard: निवडा डॅशबोर्ड
+    create-new-dashboard: तयार करा नवीन डॅशबोर्ड
+    create-a-new-dashboard: तयार करा a नवीन डॅशबोर्ड
+    confirm-create-dashboard: तयार करा डॅशबोर्ड!
+    edit-layout: संपादित करा layout
+    add-widgets: Add widgets
+    delete-dashboard: हटवा डॅशबोर्ड
+    save-dashboard: जतन करा डॅशबोर्ड
+    you-cannot-delete-this-dashboard: तुम्ही cannot हटवा हे डॅशबोर्ड.
+    are-you-sure-you-want-delete-dashboard: आहेत तुम्ही sure to हटवा हे {dashboardName}?
+    create-to-customize-hint: तयार करा a डॅशबोर्ड to customize widgets.
+  dashboard-widget-panel:
+    widget-name: '{widgetName} Widget'
+    select-widgets: निवडा Widgets
+    close-and-save: Close आणि जतन करा
+services:
+  dashboard-service:
+    create-dashboard-success-notification: नवीन डॅशबोर्ड `{dashboardName}` created succesfully.
+    delete-dashboard-success-notification: डॅशबोर्ड `{dashboardName}` was deleted.
+auth:
+  verification:
+    header-title: खाते Verification
+    title: सत्यापित करा तुमचा ईमेल पत्ता
+    message-text: <strong>Almost done!</strong><br> Check तुमचा ईमेल साठी a verification code.
+    verification-code-text: प्रविष्ट करा the verification code तुम्ही received via ईमेल.
+    verification-input-label: Verification Code
+    verify-button-text: सत्यापित करा & सुरू ठेवा
+    didnt-receive-a-code: Didn't receive a code yet?
+    not-sent:
+      message: Didn't receive a code yet?
+      alternative-choice: Use alternaitve options below to सत्यापित करा तुमचा खाते.
+      resend-email: Resend ईमेल
+      send-by-sms: Send by SMS
+  two-fa:
+    verify-code:
+      verification-code: Verification Code
+      check-title: Check तुमचा ईमेल किंवा फोन
+      check-subtitle: We've sent तुम्ही a verification code. प्रविष्ट करा the code below to complete the लॉगिन process.
+      expired-help-text: तुमचा 2FA authentication code has expired. तुम्ही can request another code if तुम्ही need more वेळ.
+      resend-code: Resend Code
+      verify-code: सत्यापित करा Code
+      cancel-two-factor: Cancel Two-Factor
+      invalid-session-error-notification: अवैध session. कृपया try again.
+      verification-successful-notification: Verification successful!
+      verification-code-expired-notification: Verification code has expired. कृपया request a नवीन one.
+      verification-code-failed-notification: सत्यापन अयशस्वी. कृपया पुन्हा प्रयत्न करा.
+    resend-code:
+      verification-code-resent-notification: नवीन verification code sent.
+      verification-code-resent-error-notification: त्रुटी resending verification code. कृपया try again.
+  forgot-password:
+    success-message: Check तुमचा ईमेल to सुरू ठेवा!
+    is-sent:
+      title: Almost Done!
+      message: <strong>Check तुमचा ईमेल!</strong><br> We've sent तुम्ही a magic link to तुमचा ईमेल which will allow तुम्ही
+        to reset तुमचा पासवर्ड. The link expires मध्ये 15 minutes.
+    not-sent:
+      title: Forgot तुमचा पासवर्ड?
+      message: <strong>Don't worry, we've got तुमचा back.</strong><br> प्रविष्ट करा the ईमेल तुम्ही use to लॉगिन to {appName}
+        आणि we will send तुम्ही a secure link to reset तुमचा पासवर्ड.
+    form:
+      email-label: तुमचा ईमेल पत्ता
+      submit-button: OK, Send me a magic link!
+      nevermind-button: Nevermind
+  login:
+    title: Sign मध्ये to तुमचा खाते
+    no-identity-notification: Did तुम्ही forget to प्रविष्ट करा तुमचा ईमेल?
+    no-password-notification: Did तुम्ही forget to प्रविष्ट करा तुमचा पासवर्ड?
+    unverified-notification: तुमचा खाते needs to be verified to proceed.
+    password-reset-required: A पासवर्ड reset आहे आवश्यक to सुरू ठेवा.
+    failed-attempt:
+      message: <strong>Forgot तुमचा पासवर्ड?</strong><br> Click the बटण below to reset तुमचा पासवर्ड.
+      button-text: Ok, मदत me reset!
+    form:
+      email-label: ईमेल पत्ता
+      password-label: पासवर्ड
+      remember-me-label: Remember me
+      forgot-password-label: Forgot तुमचा पासवर्ड?
+      sign-in-button: Sign मध्ये
+      create-account-button: तयार करा a नवीन खाते
+    slow-connection-message: Experiencing connectivity issues.
+  reset-password:
+    success-message: तुमचा पासवर्ड has been reset! लॉगिन to सुरू ठेवा.
+    invalid-verification-code: हे reset पासवर्ड link आहे अवैध किंवा expired.
+    title: Reset तुमचा पासवर्ड
+    form:
+      code:
+        label: तुमचा reset code
+        help-text: The verification code तुम्ही received मध्ये तुमचा ईमेल.
+      password:
+        label: नवीन पासवर्ड
+        help-text: प्रविष्ट करा a पासवर्ड at-least 6 characters to सुरू ठेवा.
+      confirm-password:
+        label: पुष्टी नवीन पासवर्ड
+        help-text: प्रविष्ट करा a पासवर्ड at-least 6 characters to सुरू ठेवा.
+      submit-button: Reset पासवर्ड
+      back-button: मागे
+  confirm-email-change:
+    success-message: तुमचा ईमेल पत्ता has been updated.
+    invalid-verification-code: हे ईमेल change link आहे अवैध किंवा expired.
+    title: पुष्टी ईमेल change
+    message-text: पुष्टी हे change to अपडेट the लॉगिन ईमेल साठी तुमचा FleetIndia खाते.
+    form:
+      code:
+        label: Confirmation code
+        help-text: The confirmation code कडून तुमचा ईमेल.
+      submit-button: पुष्टी ईमेल Change
+      back-button: मागे
+console:
+  create-or-join-organization:
+    modal-title: तयार करा किंवा सामील व्हा a संस्था
+    join-success-notification: तुम्ही have joined a नवीन संस्था!
+    create-success-notification: तुम्ही have created a नवीन संस्था!
+  switch-organization:
+    modal-title: आहेत तुम्ही sure तुम्ही want to switch संस्था to {organizationName}?
+    modal-body: By confirming तुमचा खाते will remain logged मध्ये, but तुमचा primary संस्था will be switched.
+    modal-accept-button-text: Yes, I want to switch संस्था
+    success-notification: तुम्ही have switched organizations
+  account:
+    index:
+      upload-new: Upload नवीन
+      phone: तुमचा फोन number.
+      photos: photos
+      timezone: निवडा तुमचा वेळ क्षेत्र.
+  admin:
+    menu:
+      overview: Overview
+      organizations: Organizations
+      branding: Branding
+      2fa-config: 2FA Config
+      platform-api-token: Platform API Token
+      schedule-monitor: Schedule Monitor
+      services: Services
+      mail: Mail
+      filesystem: Filesystem
+      queue: Queue
+      socket: Socket
+      push-notifications: Push Notifications
+    schedule-monitor:
+      schedule-monitor: Schedule Monitor
+      task-logs-for: 'Task Logs साठी:'
+      showing-last-count: Showing last {count} logs
+      name: नाव
+      type: प्रकार
+      timezone: वेळ क्षेत्र
+      last-started: Last Started
+      last-finished: Last Finished
+      last-failure: Last Failure
+      date: तारीख
+      memory: Memory
+      runtime: Runtime
+      output: Output
+      no-output: No output
+    config:
+      database:
+        title: Database Configuration
+      filesystem:
+        title: Filesystem Configuration
+      mail:
+        title: Mail Configuration
+      notification-channels:
+        title: Push Notifications Configuration
+      queue:
+        title: Queue Configuration
+      services:
+        title: Services Configuration
+      socket:
+        title: सॉकेट कॉन्फिगरेशन
+    platform-api-token:
+      title: Platform API Token
+      description: Manage the platform API token used by trusted integrations to access protected platform endpoints such
+        as the organization directory.
+      loading: Loading platform API token status...
+      status: स्थिती
+      configured: Configured
+      not-configured: Not configured
+      last-rotated: Last rotated
+      last-used: Last used
+      never: Never
+      generate-token: Generate Token
+      rotate-token: Rotate Token
+      revoke-token: टोकन रद्द करा
+      one-time-warning: Copy हे token now. It will not be shown again.
+      rotate-confirm-title: Rotate platform API token?
+      rotate-warning: Rotating हे token immediately invalidates integrations using the previous token.
+      revoke-confirm-title: Revoke platform API token?
+      revoke-warning: Revoking disables platform-token access to protected platform endpoints.
+      generated: Platform API token generated.
+      rotated: Platform API token rotated.
+      revoked: Platform API token revoked.
+      copied: Platform API token copied to clipboard.
+    branding:
+      title: Branding
+      icon-text: Icon
+      upload-new: Upload नवीन
+      reset-default: Reset to default
+      logo-text: Logo
+      theme: Default Theme
+    index:
+      total-users: एकूण Users
+      total-organizations: एकूण Organizations
+      total-transactions: एकूण Transactions
+    notifications:
+      title: Notifications
+      notification-settings: सूचना सेटिंग्ज
+    organizations:
+      index:
+        title: Organizations
+        owner-name-column: Owner
+        owner-phone-column: Owner फोन
+        owner-email-column: Owner फोन
+        users-count-column: वापरकर्ते
+        phone-column: फोन
+        email-column: ईमेल
+      users:
+        title: वापरकर्ते
+  settings:
+    index:
+      title: संस्था सेटिंग्ज
+      organization-name: संस्था नाव
+      organization-description: संस्था वर्णन
+      organization-phone: संस्था फोन number
+      organization-currency: संस्था चलन
+      organization-id: संस्था ID
+      organization-branding: संस्था Branding
+      logo: Logo
+      logo-help-text: Logo साठी तुमचा संस्था.
+      upload-new-logo: Upload नवीन logo
+      backdrop: Backdrop
+      backdrop-help-text: पर्यायी banner किंवा background image साठी तुमचा संस्था.
+      upload-new-backdrop: Upload नवीन backdrop
+      organization-timezone: निवडा the default वेळ क्षेत्र साठी तुमचा संस्था.
+      select-timezone: निवडा वेळ क्षेत्र.
+  extensions:
+    title: Extensions आहेत coming soon!
+    message: कृपया check back मध्ये the upcoming versions as we prepare to launch the Extensions repository आणि marketplace.
+  notifications:
+    select-all: निवडा सर्व
+    mark-as-read: Mark as Read
+    received: 'Received:'
+    message: No notifications to display.
+invite:
+  for-users:
+    invitation-message: You've been invited to सामील व्हा {companyName}
+    invitation-sent-message: You've been invited to सामील व्हा the {companyName} संस्था वर {appName}. To accept हे invitation,
+      input तुमचा invitation code received by ईमेल आणि click सुरू ठेवा.
+    invitation-code-sent-text: तुमचा invitiation code
+    accept-invitation-text: Accept Invitation
+onboard:
+  index:
+    title: तयार करा तुमचा खाते
+    welcome-title: <strong>स्वागत आहे to {companyName}!</strong><br />
+    welcome-text: Complete the तपशील आवश्यक below to get started.
+    full-name: पूर्ण नाव
+    full-name-help-text: तुमचा पूर्ण नाव
+    your-email: ईमेल पत्ता
+    your-email-help-text: तुमचा ईमेल पत्ता
+    phone: फोन number
+    phone-help-text: तुमचा फोन number
+    organization-name: संस्था नाव
+    organization-help-text: तुमचा संस्था नाव, सर्व तुमचा services आणि resources will be managed under हे संस्था, later तुम्ही
+      can तयार करा as many organizations as तुम्ही want किंवा need.
+    password: प्रविष्ट करा a पासवर्ड
+    password-help-text: तुमचा पासवर्ड, make sure it's a good one.
+    confirm-password: पुष्टी तुमचा पासवर्ड
+    confirm-password-help-text: Just to पुष्टी the पासवर्ड तुम्ही entered above.
+    continue-button-text: सुरू ठेवा
+  verify-email:
+    header-title: खाते Verification
+    title: सत्यापित करा तुमचा ईमेल पत्ता
+    message-text: <strong>Almost done!</strong><br> Check तुमचा ईमेल साठी a verification code.
+    verification-code-text: प्रविष्ट करा the verification code तुम्ही received via ईमेल.
+    verification-input-label: Verification Code
+    verify-button-text: सत्यापित करा & सुरू ठेवा
+    didnt-receive-a-code: Didn't receive a code yet?
+    not-sent:
+      message: Didn't receive a code yet?
+      alternative-choice: Use alternaitve options below to सत्यापित करा तुमचा खाते.
+      resend-email: Resend ईमेल
+      send-by-sms: Send by SMS
+install:
+  not-configured-title: FleetIndia आहे not installed किंवा configured
+  not-configured-message: Complete setup कडून the FleetIndia CLI किंवा application container, then reload हे page once the
+    database, migrations, आणि seed data आहेत ready.
+  running-locally-docs: See running locally docs
+  cloud-docs: See cloud deployment docs
+  refreshing: Installation complete, refreshing...
+layout:
+  header:
+    menus:
+      organization:
+        settings: संस्था सेटिंग्ज
+        create-or-join: तयार करा किंवा सामील व्हा organizations
+        explore-extensions: Explore extensions
+      user:
+        view-profile: View प्रोफाइल
+        keyboard-shortcuts: Show keyboard shortcuts
+        changelog: Changelog
+india:
+  pin-code: पिन कोड
+  pin-code-placeholder: ६ अंकी पिन कोड
+  state: राज्य / केंद्रशासित प्रदेश
+  select-state: राज्य किंवा केंद्रशासित प्रदेश निवडा
+  gstin: GSTIN (पर्यायी)
+  gstin-help: पर्यायी. GST नोंदणी नसल्यास रिकामे ठेवा.
+  gstin-invalid: GSTIN स्वरूप अवैध आहे
+  vehicle-plate: वाहनाचा नोंदणी क्रमांक

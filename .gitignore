@@ -66,3 +66,4 @@ vendor/
 storage/*.key
 *.log
 .DS_Store
+docker-compose.override.yml.bak*

@@ -1,0 +1,32 @@
+<div class="india-address-fields space-y-3" ...attributes>
+    <div>
+        <label class="form-label">{{t "india.pin-code"}}</label>
+        <input
+            type="text"
+            inputmode="numeric"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            class="form-input w-full"
+            placeholder={{t "india.pin-code-placeholder"}}
+            value={{this.pinCode}}
+            {{on "input" this.onPinInput}}
+        />
+    </div>
+
+    {{#if this.isIndia}}
+        <div>
+            <label class="form-label">{{t "india.state"}}</label>
+            <select class="form-select w-full" value={{this.state}} {{on "change" this.onStateChange}}>
+                <option value="">{{t "india.select-state"}}</option>
+                {{#each this.states as |s|}}
+                    <option value={{s.name}} selected={{eq s.name this.state}}>{{s.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    {{else}}
+        <div>
+            <label class="form-label">{{t "india.state"}}</label>
+            <input type="text" class="form-input w-full" value={{this.state}} {{on "input" this.onStateChange}} />
+        </div>
+    {{/if}}
+</div>
