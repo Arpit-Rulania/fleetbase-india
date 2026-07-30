@@ -1,0 +1,37 @@
+name: CHANGES.md check
+
+on:
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  changes-md:
+    name: Verify CHANGES.md is present and non-empty
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Check CHANGES.md exists and has content
+        run: |
+          if [ ! -f CHANGES.md ]; then
+            echo "FAIL: CHANGES.md does not exist in the repository root."
+            echo "Every PR to fleetbase-india must include a CHANGES.md entry."
+            exit 1
+          fi
+
+          # Strip blank lines and comment markers; require at least one table row
+          ROWS=$(grep -cE '^\|[^-]' CHANGES.md || true)
+
+          if [ "$ROWS" -lt 1 ]; then
+            echo "FAIL: CHANGES.md exists but contains no table rows."
+            echo "Add at least one row documenting your modification."
+            echo ""
+            echo "Expected format:"
+            echo "| path/to/file | Type of change | Reason | YYYY-MM-DD |"
+            exit 1
+          fi
+
+          echo "PASS: CHANGES.md is present with $ROWS documented modification(s)."
