@@ -72,6 +72,7 @@
 | console/public/images/icon.svg | Branding | FleetIndia mark | 2026-07-31 |
 | console/public/images/fleetbase-logo-svg.svg | Branding | Neutral/FleetIndia logo SVG | 2026-07-31 |
 | console/app/router.js | FleetIndia UI | Add console.india/* routes for core-platform modules | 2026-07-31 |
+| console/router.map.js | FleetIndia UI | Source-of-truth router map (extensions generator overwrites app/router.js) — india routes live here | 2026-07-31 |
 | console/app/instance-initializers/register-fleetindia-menu.js | FleetIndia UI | Header menu item FleetIndia + shortcuts | 2026-07-31 |
 | console/app/services/core-platform.js | FleetIndia UI | REST client for :3010 modules | 2026-07-31 |
 | console/app/routes/console/india*.js | FleetIndia UI | India section routes | 2026-07-31 |

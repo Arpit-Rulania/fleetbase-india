@@ -37,6 +37,18 @@ Router.map(function () {
             this.route('two-fa');
             this.route('notifications');
         });
+        // FleetIndia — declare BEFORE console.virtual /:slug so /india is not swallowed
+        this.route('india', function () {
+            this.route('index', { path: '/' });
+            this.route('compliance');
+            this.route('fastag');
+            this.route('fuel-guard');
+            this.route('notifications');
+            this.route('billing');
+            this.route('driver-ledger');
+            this.route('analytics');
+            this.route('governance');
+        });
         this.route('virtual', { path: '/:slug' });
         this.route('admin', function () {
             this.route('config', function () {
