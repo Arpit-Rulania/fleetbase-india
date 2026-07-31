@@ -1,0 +1,19 @@
+<section class="fleetindia-home-links mx-4 mb-6 rounded-lg border-2 border-teal-600 bg-teal-50 dark:bg-slate-900 p-4">
+    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <div>
+            <h2 class="text-lg font-semibold text-teal-900 dark:text-teal-200">FleetIndia — India modules</h2>
+            <p class="text-sm text-teal-800 dark:text-teal-300">
+                New India features (core-platform). Existing Fleet-Ops / IAM stay in the top nav.
+            </p>
+        </div>
+        <LinkTo @route="console.india.index" class="btn btn-primary btn-sm">Open FleetIndia</LinkTo>
+    </div>
+    <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        {{#each this.links as |link|}}
+            <LinkTo @route={{link.route}} class="block rounded border border-teal-200 dark:border-teal-800 bg-white dark:bg-slate-800 px-3 py-2 hover:border-teal-600">
+                <div class="font-medium text-sm">{{link.title}}</div>
+                <div class="text-xs text-gray-500">{{link.blurb}}</div>
+            </LinkTo>
+        {{/each}}
+    </div>
+</section>

@@ -78,4 +78,6 @@
 | console/app/routes/console/india*.js | FleetIndia UI | India section routes | 2026-07-31 |
 | console/app/controllers/console/india*.js | FleetIndia UI | Module page controllers | 2026-07-31 |
 | console/app/templates/console/india*.hbs | FleetIndia UI | Module page templates | 2026-07-31 |
-| console/app/styles/console.css | FleetIndia UI | Panel/card styles for India modules | 2026-07-31 |
+| console/app/templates/console/home.hbs | FleetIndia UI | Teal home panel linking to all India modules | 2026-07-31 |
+| console/app/components/fleetindia-home-links.* | FleetIndia UI | Home dashboard entry for India modules | 2026-07-31 |
+| PRODUCT.md | Docs | Plain-English product map: what customers use vs plumbing | 2026-07-31 |

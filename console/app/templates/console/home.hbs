@@ -1,6 +1,7 @@
 {{page-title "Dashboard"}}
 <Layout::Section::Body class="overflow-y-scroll h-full">
     <TwoFaEnforcementAlert />
+    <FleetindiaHomeLinks />
     <RegistryYield @registry="console:home:before-dashboard" as |RegistryComponent|>
         <RegistryComponent @controller={{this}} @position="before-dashboard" />
     </RegistryYield>

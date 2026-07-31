@@ -1,9 +1,11 @@
 {{page-title "FleetIndia"}}
 
-<EmberWormhole @to="sidebar-menu-items">
-    <Layout::Sidebar::Navigator @items={{this.navigationItems}} @searchPlaceholder="Search FleetIndia..." />
-</EmberWormhole>
-
-<Layout::Section::Container>
+{{! Inline nav — do not rely on wormhole/sidebar customiser }}
+<div class="fleetindia-panel p-4">
+    <div class="flex flex-wrap gap-2 mb-4 border-b border-gray-200 dark:border-gray-700 pb-3">
+        {{#each this.navigationItems as |item|}}
+            <LinkTo @route={{item.route}} class="btn btn-sm btn-default">{{item.label}}</LinkTo>
+        {{/each}}
+    </div>
     {{outlet}}
-</Layout::Section::Container>
+</div>
