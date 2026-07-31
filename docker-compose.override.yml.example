@@ -9,6 +9,10 @@ services:
       # Add your environment-specific variables here
       MAIL_MAILER: smtp  # or ses, mailgun, postmark, sendgrid
       OSRM_HOST: https://router.project-osrm.org
+      # FleetIndia privacy defaults (also see api/overrides/)
+      TELEMETRY_DISABLED: "true"
+      FLEETBASE_BLOG_DISABLED: "true"
+      REGISTRY_HOST: ""
       # IPINFO_API_KEY: your_api_key
       # GOOGLE_MAPS_API_KEY: your_api_key
       # GOOGLE_MAPS_LOCALE: us

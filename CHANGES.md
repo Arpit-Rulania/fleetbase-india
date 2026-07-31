@@ -34,3 +34,17 @@
 | console/app/components/india/vehicle-plate-input.hbs | Indian formats | Vehicle plate input template | 2026-07-30 |
 | console/app/components/onboarding/form.js | Onboarding | GSTIN optional; INR/IN defaults | 2026-07-30 |
 | console/app/components/onboarding/form.hbs | Onboarding | GSTIN + India address fields on signup | 2026-07-30 |
+| api/overrides/core-api/src/Support/Telemetry.php | Privacy / vendor override | Replace upstream Telemetry — no posts to telemetry.fleetbase.io; no source.modified / GitHub commit fingerprint | 2026-07-31 |
+| api/overrides/core-api/src/Http/Controllers/Internal/v1/LookupController.php | Privacy / vendor override | Short-circuit fleetbaseBlog when FLEETBASE_BLOG_DISABLED (default) — no blog.fleetbase.io RSS | 2026-07-31 |
+| api/overrides/README.md | Docs | Document privacy override mounts | 2026-07-31 |
+| scripts/apply-privacy-overrides.sh | Ops | Re-apply privacy vendor overrides into running container | 2026-07-31 |
+| docker-compose.yml | Privacy env | Clear REGISTRY_HOST; set TELEMETRY_DISABLED + FLEETBASE_BLOG_DISABLED | 2026-07-31 |
+| docker-compose.override.yml | Privacy mounts + env | Mount Telemetry/LookupController overrides; disable registry/telemetry/blog; attribution flag on console | 2026-07-31 |
+| console/app/instance-initializers/initialize-widgets.js | Privacy | Stop auto-registering fleetbase-blog + github-card widgets | 2026-07-31 |
+| console/app/components/fleetbase-blog.js | Privacy | No-op blog fetch (no lookup/fleetbase-blog) | 2026-07-31 |
+| console/app/components/fleetbase-blog.hbs | Privacy | Remove www.fleetbase.io/blog link | 2026-07-31 |
+| console/app/components/github-card.js | Privacy | No-op GitHub API fetches to repos/fleetbase/fleetbase | 2026-07-31 |
+| console/app/controllers/install.js | Privacy | Remove fleetbase.io docs URLs | 2026-07-31 |
+| console/environments/.env.development | Privacy | DISABLE_FLEETBASE_ATTRIBUTION=true | 2026-07-31 |
+| console/environments/.env.production | Privacy | DISABLE_FLEETBASE_ATTRIBUTION=true | 2026-07-31 |
+| api/config/mail.php | Privacy | Default MAIL_FROM_ADDRESS noreply@localhost (not hello@fleetbase.io) | 2026-07-31 |

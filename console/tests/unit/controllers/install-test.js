@@ -13,8 +13,8 @@ module('Unit | Controller | install', function (hooks) {
     test('it exposes docs links without installer actions', function (assert) {
         let controller = this.owner.lookup('controller:install');
 
-        assert.strictEqual(controller.runningLocallyDocsUrl, 'https://www.fleetbase.io/docs/platform/quickstart/running-locally');
-        assert.strictEqual(controller.cloudDocsUrl, 'https://www.fleetbase.io/docs/platform/quickstart/deploy-in-cloud');
+        assert.strictEqual(controller.runningLocallyDocsUrl, '#');
+        assert.strictEqual(controller.cloudDocsUrl, '#');
         assert.strictEqual(controller.startInstall, undefined);
         assert.strictEqual(controller.install, undefined);
     });
