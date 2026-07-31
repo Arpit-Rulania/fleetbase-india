@@ -1,6 +1,21 @@
 # Modifications to Fleetbase Core
 | File | Type of change | Reason | Date |
 |------|----------------|--------|------|
+| console/ember-cli-build.js | Build hardening | Add ember-cli-terser config to strip /*! license banners from production bundle; add extensions:['js'] to sourcemaps block | 2026-07-31 |
+| console/app/utils/router-refresh-patch.js | Branding / AGPL hygiene | Remove @author Fleetbase Pte Ltd <hello@fleetbase.io> from JSDoc | 2026-07-31 |
+| console/app/index.html | Branding | Change msapplication-TileColor from Fleetbase orange #da532c to FleetIndia blue #2563eb; change mask-icon color from Fleetbase teal #5bbad5 to #2563eb | 2026-07-31 |
+| console/public/favicon/browserconfig.xml | Branding | Change Windows tile color from Fleetbase #da532c to #2563eb | 2026-07-31 |
+| console/public/favicon/site.webmanifest | Branding | Change theme_color/background_color from Fleetbase white-on-white to FleetIndia blue/slate | 2026-07-31 |
+| console/public/images/fleetbase-logo-svg.svg | Branding | Replace upstream Fleetbase wordmark SVG with FleetIndia truck + wordmark; breaks stock asset hash | 2026-07-31 |
+| console/public/images/icon.svg | Branding | Replace Fleetbase F-swirl SVG icon with FleetIndia truck icon on blue background; breaks stock asset hash | 2026-07-31 |
+| console/config/environment.js | Branding / fingerprint | Change ember-local-storage namespace from @fleetbase to @fleetindia | 2026-07-31 |
+| api/config/app.php | Branding | Change APP_NAME fallback from 'Fleetbase' to 'FleetIndia' | 2026-07-31 |
+| console/ember-cli-build.js | Build hardening | Explicitly disable sourcemaps in production builds; prevents JS/CSS map files from being generated and exposing source paths | 2026-07-31 |
+| console/nginx.conf | Build hardening / privacy | Block *.map files (404); add /images/fallbacks/ location with local SVG fallback so placeholder requests never reach upstream CDN | 2026-07-31 |
+| console/Dockerfile | Build hardening | Default DISABLE_FLEETBASE_ATTRIBUTION=true so production images omit upstream branding out-of-the-box | 2026-07-31 |
+| console/Dockerfile.server-build | Build hardening | Default DISABLE_FLEETBASE_ATTRIBUTION=true (parity with Dockerfile) | 2026-07-31 |
+| console/public/images/fleetbase-logo-svg.svg | Branding / privacy | Replace stock Fleetbase wordmark SVG (Adobe Illustrator export with Fleetbase letter-paths) with FleetIndia SVG — eliminates the most visible upstream brand fingerprint shown as fallback logo on onboarding, invite, and branding pages | 2026-07-31 |
+| console/config/environment.js | Privacy / phone-home | Replace hard-coded flb-assets.s3 CDN URLs (13 default image fallbacks) with local /images/fallbacks/* paths; annotate that DEFAULT_* env vars must be overridden to self-hosted assets to fully eliminate upstream CDN fetches | 2026-07-31 |
 | console/translations/en-us.yaml | Branding + i18n keys | Set app.name to FleetIndia; added india.* keys | 2026-07-30 |
 | console/fleetbase.config.json | Branding / runtime config | Added appName, supportEmail, supportUrl, CORE_PLATFORM_URL | 2026-07-30 |
 | console/app/index.html | Branding | Set document title to FleetIndia | 2026-07-30 |
@@ -48,3 +63,18 @@
 | console/environments/.env.development | Privacy | DISABLE_FLEETBASE_ATTRIBUTION=true | 2026-07-31 |
 | console/environments/.env.production | Privacy | DISABLE_FLEETBASE_ATTRIBUTION=true | 2026-07-31 |
 | api/config/mail.php | Privacy | Default MAIL_FROM_ADDRESS noreply@localhost (not hello@fleetbase.io) | 2026-07-31 |
+| console/ember-cli-build.js | Fingerprint hygiene | Disable sourcemaps in prod; strip /*! @license banners via terser | 2026-07-31 |
+| console/nginx.conf | Fingerprint hygiene | Deny *.map; local fallback images (no flb-assets CDN) | 2026-07-31 |
+| Caddyfile.console | Fingerprint hygiene | Block *.map responses | 2026-07-31 |
+| console/config/environment.js | Fingerprint hygiene | Local fallback image defaults; @fleetindia storage ns | 2026-07-31 |
+| console/app/index.html | Fingerprint hygiene | FleetIndia title; app-loader class (not fleetbase-loader) | 2026-07-31 |
+| console/public/favicon/* | Fingerprint hygiene | Distinct teal FI favicons (new Shodan hash) | 2026-07-31 |
+| console/public/images/icon.svg | Branding | FleetIndia mark | 2026-07-31 |
+| console/public/images/fleetbase-logo-svg.svg | Branding | Neutral/FleetIndia logo SVG | 2026-07-31 |
+| console/app/router.js | FleetIndia UI | Add console.india/* routes for core-platform modules | 2026-07-31 |
+| console/app/instance-initializers/register-fleetindia-menu.js | FleetIndia UI | Header menu item FleetIndia + shortcuts | 2026-07-31 |
+| console/app/services/core-platform.js | FleetIndia UI | REST client for :3010 modules | 2026-07-31 |
+| console/app/routes/console/india*.js | FleetIndia UI | India section routes | 2026-07-31 |
+| console/app/controllers/console/india*.js | FleetIndia UI | Module page controllers | 2026-07-31 |
+| console/app/templates/console/india*.hbs | FleetIndia UI | Module page templates | 2026-07-31 |
+| console/app/styles/console.css | FleetIndia UI | Panel/card styles for India modules | 2026-07-31 |

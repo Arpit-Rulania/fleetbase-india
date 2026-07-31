@@ -80,6 +80,7 @@ services:
       dockerfile: Dockerfile
       args:
         ENVIRONMENT: development
+        DISABLE_FLEETBASE_ATTRIBUTION: "true"
     ports:
       - "4200:4200"
     volumes:

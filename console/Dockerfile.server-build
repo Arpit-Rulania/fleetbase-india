@@ -18,8 +18,8 @@ RUN mkdir -p ~/.pnpm
 ENV PNPM_HOME=/root/.pnpm
 ENV PATH=/root/.pnpm/bin:$PATH
 
-# Attribution
-ARG DISABLE_FLEETBASE_ATTRIBUTION=false
+# Attribution — default true so production builds omit upstream branding
+ARG DISABLE_FLEETBASE_ATTRIBUTION=true
 ENV DISABLE_FLEETBASE_ATTRIBUTION=$DISABLE_FLEETBASE_ATTRIBUTION
 
 RUN npm install -g ember-cli pnpm

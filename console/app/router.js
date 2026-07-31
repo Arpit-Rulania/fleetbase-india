@@ -61,6 +61,18 @@ Router.map(function () {
                 this.route('logs', { path: '/:id/logs' });
             });
         });
+        // FleetIndia — private core-platform modules (NestJS :3010)
+        this.route('india', function () {
+            this.route('index', { path: '/' });
+            this.route('compliance');
+            this.route('fastag');
+            this.route('fuel-guard');
+            this.route('notifications');
+            this.route('billing');
+            this.route('driver-ledger');
+            this.route('analytics');
+            this.route('governance');
+        });
     });
     this.route('catch', { path: '/*' });
 });

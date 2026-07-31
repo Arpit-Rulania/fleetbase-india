@@ -1,0 +1,26 @@
+{{page-title "Notifications"}}
+<div class="fleetindia-panel p-4 space-y-6">
+  <header>
+    <h1 class="text-2xl font-semibold">Notifications</h1>
+    <p class="text-sm text-gray-500">WhatsApp / IVR prefs and alerts — <code class="text-xs">/api/notifications/*</code></p>
+  </header>
+  <section class="fi-card">
+    <h2 class="fi-card-title">Preferences</h2>
+    <form {{on "submit" this.loadPrefs}} class="fi-form-row">
+      <Input @value={{this.recipientUuid}} placeholder="Recipient UUID / phone" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Load</button>
+      <button type="button" class="btn btn-default btn-sm" disabled={{this.busy}} {{on "click" this.savePrefs}}>Save defaults</button>
+    </form>
+  </section>
+  <section class="fi-card">
+    <h2 class="fi-card-title">Send alert</h2>
+    <form {{on "submit" this.sendAlert}} class="fi-form-grid">
+      <Input @value={{this.recipientUuid}} placeholder="Recipient" class="form-input" />
+      <Input @value={{this.alertType}} placeholder="Type" class="form-input" />
+      <Input @value={{this.channel}} placeholder="Channel" class="form-input" />
+      <Input @value={{this.body}} placeholder="Body" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Send</button>
+    </form>
+  </section>
+  {{#if this.resultJson}}<pre class="fi-result">{{this.resultJson}}</pre>{{/if}}
+</div>

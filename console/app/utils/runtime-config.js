@@ -22,10 +22,10 @@ const RUNTIME_CONFIG_MAP = {
 };
 
 /**
- * Cache key for localStorage
+ * Cache key for localStorage — deliberately generic; must not reveal upstream branding.
  */
-const CACHE_KEY = 'fleetbase_runtime_config';
-const CACHE_VERSION_KEY = 'fleetbase_runtime_config_version';
+const CACHE_KEY = 'fi_runtime_config';
+const CACHE_VERSION_KEY = 'fi_runtime_config_version';
 const CACHE_TTL = 1000 * 60 * 60; // 1 hour
 
 /**

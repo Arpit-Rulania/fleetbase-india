@@ -8,8 +8,26 @@ const mergeTrees = require('broccoli-merge-trees');
 const toBoolean = require('./config/utils/to-boolean');
 
 module.exports = function (defaults) {
+    const isProduction = (defaults.environment || process.env.EMBER_ENV || 'development') === 'production';
+
     const app = new EmberApp(defaults, {
         storeConfigInMeta: false,
+
+        sourcemaps: {
+            enabled: !isProduction,
+            extensions: ['js'],
+        },
+
+        // Strip all comments — including preserved /*! license banners — from
+        // the production bundle so upstream Fleetbase @license strings don't
+        // survive minification and end up in the browser console.
+        'ember-cli-terser': {
+            enabled: isProduction,
+            terser: {
+                compress: { passes: 2 },
+                output: { comments: false },
+            },
+        },
 
         fingerprint: {
             exclude: ['leaflet/', 'leaflet-images/', 'socketcluster-client.min.js', 'fleetbase.config.json', 'extensions.json'],

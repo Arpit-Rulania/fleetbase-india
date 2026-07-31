@@ -9,7 +9,6 @@ import { debug } from '@ember/debug';
  *
  * Bug: https://github.com/emberjs/ember.js/issues/19260
  *
- * @author Fleetbase Pte Ltd <hello@fleetbase.io>
  * @version 1.0.0
  */
 

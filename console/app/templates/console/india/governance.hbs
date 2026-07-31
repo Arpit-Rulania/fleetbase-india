@@ -1,0 +1,19 @@
+{{page-title "Governance"}}
+<div class="fleetindia-panel p-4 space-y-6">
+  <header>
+    <h1 class="text-2xl font-semibold">Governance</h1>
+    <p class="text-sm text-gray-500">Consent, retention, DSAR (DPDP window 30d pending confirm) — <code class="text-xs">/api/governance/*</code></p>
+  </header>
+  <section class="fi-card">
+    <form {{on "submit" this.check}} class="fi-form-grid">
+      <Input @value={{this.companyUuid}} placeholder="Company UUID" class="form-input" />
+      <Input @value={{this.subjectId}} placeholder="Subject ID" class="form-input" />
+      <Input @value={{this.purpose}} placeholder="Purpose" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Check consent</button>
+      <button type="button" class="btn btn-default btn-sm" disabled={{this.busy}} {{on "click" this.record}}>Record consent</button>
+      <button type="button" class="btn btn-default btn-sm" disabled={{this.busy}} {{on "click" this.policies}}>Retention policies</button>
+      <button type="button" class="btn btn-default btn-sm" disabled={{this.busy}} {{on "click" this.dsar}}>Create DSAR</button>
+    </form>
+  </section>
+  {{#if this.resultJson}}<pre class="fi-result">{{this.resultJson}}</pre>{{/if}}
+</div>

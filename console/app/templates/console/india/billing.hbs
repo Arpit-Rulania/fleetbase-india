@@ -1,0 +1,21 @@
+{{page-title "Billing"}}
+<div class="fleetindia-panel p-4 space-y-6">
+  <header>
+    <h1 class="text-2xl font-semibold">Billing</h1>
+    <p class="text-sm text-gray-500">Razorpay mandates (ceiling ₹15,000) — <code class="text-xs">/api/billing/*</code></p>
+  </header>
+  <section class="fi-card">
+    <form {{on "submit" this.loadSub}} class="fi-form-row">
+      <Input @value={{this.companyUuid}} placeholder="Company UUID" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Load subscription</button>
+    </form>
+    <form {{on "submit" this.register}} class="fi-form-grid mt-3">
+      <Input @value={{this.companyUuid}} placeholder="Company UUID" class="form-input" />
+      <Input @value={{this.planCode}} placeholder="Plan code" class="form-input" />
+      <Input @value={{this.amount}} placeholder="Amount ₹" class="form-input" @type="number" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Register mandate</button>
+      <button type="button" class="btn btn-default btn-sm" disabled={{this.busy}} {{on "click" this.changePlan}}>Change plan</button>
+    </form>
+  </section>
+  {{#if this.resultJson}}<pre class="fi-result">{{this.resultJson}}</pre>{{/if}}
+</div>

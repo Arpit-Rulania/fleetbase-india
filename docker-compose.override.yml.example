@@ -3,6 +3,11 @@
 
 version: "3.8"
 services:
+  console:
+    build:
+      args:
+        DISABLE_FLEETBASE_ATTRIBUTION: "true"
+
   application:
     environment:
       CONSOLE_HOST: http://localhost:4200

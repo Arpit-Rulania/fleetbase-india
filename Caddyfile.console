@@ -13,7 +13,12 @@ http://:8000 {
 
 http://:4200 {
 	root * /fleetbase/console/dist
-	try_files {path} /
 	encode zstd gzip
+
+	# Never serve source-map files publicly (would expose unminified source).
+	@sourcemaps path *.map
+	respond @sourcemaps 404
+
+	try_files {path} /
 	file_server
 }

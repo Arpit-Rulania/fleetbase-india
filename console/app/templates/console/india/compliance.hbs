@@ -1,0 +1,42 @@
+{{page-title "Compliance"}}
+<div class="fleetindia-panel p-4 space-y-8">
+  <header>
+    <h1 class="text-2xl font-semibold">Compliance</h1>
+    <p class="text-sm text-gray-500">VAHAN · e-way bill · lorry receipt — <code class="text-xs">/api/compliance/*</code></p>
+  </header>
+
+  <section class="fi-card">
+    <h2 class="fi-card-title">VAHAN verify</h2>
+    <form {{on "submit" this.verifyVahan}} class="fi-form-row">
+      <Input @value={{this.plateNumber}} placeholder="MH12AB1234" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Verify</button>
+    </form>
+  </section>
+
+  <section class="fi-card">
+    <h2 class="fi-card-title">Lorry receipt</h2>
+    <form {{on "submit" this.createLr}} class="fi-form-grid">
+      <Input @value={{this.lrVehicle}} placeholder="Vehicle" class="form-input" />
+      <Input @value={{this.lrOrigin}} placeholder="Origin" class="form-input" />
+      <Input @value={{this.lrDestination}} placeholder="Destination" class="form-input" />
+      <Input @value={{this.lrGoods}} placeholder="Goods" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Create LR</button>
+    </form>
+  </section>
+
+  <section class="fi-card">
+    <h2 class="fi-card-title">E-way bill</h2>
+    <form {{on "submit" this.createEwb}} class="fi-form-grid">
+      <Input @value={{this.ewbGstin}} placeholder="GSTIN" class="form-input" />
+      <Input @value={{this.ewbVehicle}} placeholder="Vehicle" class="form-input" />
+      <Input @value={{this.ewbFrom}} placeholder="From" class="form-input" />
+      <Input @value={{this.ewbTo}} placeholder="To" class="form-input" />
+      <Input @value={{this.ewbDoc}} placeholder="Document #" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Generate</button>
+    </form>
+  </section>
+
+  {{#if this.resultJson}}
+    <pre class="fi-result">{{this.resultJson}}</pre>
+  {{/if}}
+</div>

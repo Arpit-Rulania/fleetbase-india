@@ -1,0 +1,29 @@
+{{page-title "Fuel Guard"}}
+<div class="fleetindia-panel p-4 space-y-6">
+  <header>
+    <h1 class="text-2xl font-semibold">Fuel Guard</h1>
+    <p class="text-sm text-gray-500">Fill reports and anomaly detection — <code class="text-xs">/api/fuel-guard/*</code></p>
+  </header>
+  <section class="fi-card">
+    <h2 class="fi-card-title">Company config</h2>
+    <form {{on "submit" this.loadConfig}} class="fi-form-row">
+      <Input @value={{this.companyUuid}} placeholder="Company UUID" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Load config</button>
+    </form>
+  </section>
+  <section class="fi-card">
+    <h2 class="fi-card-title">Submit fill report</h2>
+    <form {{on "submit" this.submitReport}} class="fi-form-grid">
+      <Input @value={{this.companyUuid}} placeholder="Company UUID" class="form-input" />
+      <Input @value={{this.vehicleUuid}} placeholder="Vehicle UUID" class="form-input" />
+      <Input @value={{this.driverUuid}} placeholder="Driver UUID" class="form-input" />
+      <Input @value={{this.liters}} placeholder="Liters" class="form-input" @type="number" />
+      <Input @value={{this.amountPaid}} placeholder="Amount ₹" class="form-input" @type="number" />
+      <Input @value={{this.odometerKm}} placeholder="Odometer km" class="form-input" @type="number" />
+      <Input @value={{this.lat}} placeholder="Lat" class="form-input" @type="number" />
+      <Input @value={{this.lng}} placeholder="Lng" class="form-input" @type="number" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Submit</button>
+    </form>
+  </section>
+  {{#if this.resultJson}}<pre class="fi-result">{{this.resultJson}}</pre>{{/if}}
+</div>

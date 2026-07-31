@@ -11,8 +11,8 @@ ENV PNPM_HOME=/root/.pnpm
 # Set environment
 ARG ENVIRONMENT=production
 
-# Attribution
-ARG DISABLE_FLEETBASE_ATTRIBUTION=false
+# Attribution — default true so production builds omit upstream branding
+ARG DISABLE_FLEETBASE_ATTRIBUTION=true
 ENV DISABLE_FLEETBASE_ATTRIBUTION=$DISABLE_FLEETBASE_ATTRIBUTION
 
 # Add the pnpm global bin to the PATH

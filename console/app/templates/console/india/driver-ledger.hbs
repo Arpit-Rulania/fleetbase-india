@@ -1,0 +1,25 @@
+{{page-title "Driver Ledger"}}
+<div class="fleetindia-panel p-4 space-y-6">
+  <header>
+    <h1 class="text-2xl font-semibold">Driver Ledger</h1>
+    <p class="text-sm text-gray-500">Advances and trip settlements — <code class="text-xs">/api/driver-ledger/*</code></p>
+  </header>
+  <section class="fi-card">
+    <form {{on "submit" this.loadBalance}} class="fi-form-row">
+      <Input @value={{this.driverUuid}} placeholder="Driver UUID" class="form-input" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Balance</button>
+    </form>
+    <form {{on "submit" this.requestAdvance}} class="fi-form-grid mt-3">
+      <Input @value={{this.driverUuid}} placeholder="Driver UUID" class="form-input" />
+      <Input @value={{this.tripUuid}} placeholder="Trip UUID" class="form-input" />
+      <Input @value={{this.amount}} placeholder="Advance ₹" class="form-input" @type="number" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Request advance</button>
+    </form>
+    <form {{on "submit" this.settle}} class="fi-form-grid mt-3">
+      <Input @value={{this.tripUuid}} placeholder="Trip UUID" class="form-input" />
+      <Input @value={{this.totalFreight}} placeholder="Total freight ₹" class="form-input" @type="number" />
+      <button type="submit" class="btn btn-primary btn-sm" disabled={{this.busy}}>Calculate settlement</button>
+    </form>
+  </section>
+  {{#if this.resultJson}}<pre class="fi-result">{{this.resultJson}}</pre>{{/if}}
+</div>
